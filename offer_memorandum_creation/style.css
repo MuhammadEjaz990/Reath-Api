@@ -850,7 +850,9 @@ body {
   font-weight: bold;
 }
 
-.text-33 {
+.text-33,
+.five_summary,
+.seven_summary{
   left: 21.5px;
   margin: 30px auto 0;
   position: relative;
@@ -859,6 +861,14 @@ body {
   font-weight: 300;
   letter-spacing: 0.05em;
   line-height: 24px;
+}
+.five_summary strong,
+.seven_summary strong{
+  color: #000000;
+  font-weight: 700;
+}
+.seven_summary{
+  width: 100%;
 }
 
 .wrapper-6 {
@@ -2211,13 +2221,18 @@ body {
   line-height: 1.2;
 }
 
-.text-88 {
+.text-88,
+.six_summary{
   left: 6.5px;
   margin: 20px auto 0;
   position: relative;
   width: 422px;
   font-weight: 300;
   line-height: 24px;
+}
+.six_summary strong{
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .col-55 {
