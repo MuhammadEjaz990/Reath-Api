@@ -782,8 +782,8 @@ body {
   /* 1603px / 1604px = 99.93765% */
   background: url(images/background.png) no-repeat center 0;
   background-position: center top;
-  background-size: contain;
-  background-repeat: no-repeat;
+  /* background-size: contain;
+  background-repeat: no-repeat; */
   /* background-position: center center; */
 }
 
@@ -852,7 +852,7 @@ body {
 
 .text-33,
 .five_summary,
-.seven_summary{
+.seven_summary {
   left: 21.5px;
   margin: 30px auto 0;
   position: relative;
@@ -862,12 +862,14 @@ body {
   letter-spacing: 0.05em;
   line-height: 24px;
 }
+
 .five_summary strong,
-.seven_summary strong{
+.seven_summary strong {
   color: #000000;
   font-weight: 700;
 }
-.seven_summary{
+
+.seven_summary {
   width: 100%;
 }
 
@@ -886,12 +888,10 @@ body {
   width: 997px;
   background: url(images/picture.jpg) no-repeat;
   margin-left: -498.5px;
-  background-size: contain;
-  /* ensures the entire image is visible */
+  /* background-size: contain;
   background-repeat: no-repeat;
-  /* ensures the image is not repeated */
-  background-position: center center;
-  /* centers the image */
+  background-position: center center; */
+ 
 }
 
 .eastdil-logo-copy-3 {
@@ -961,6 +961,30 @@ body {
   margin: 25px auto 0;
   position: relative;
 }
+
+
+.editRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-left: 10px;
+}
+
+.textEdit {
+  font-size: 1.0625rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.textEditsecond {
+  font-size: 2.1875rem;
+  font-weight: bold;
+  text-shadow: 2.007392px 2.229434px 7px rgba(0, 0, 0, 0.35);
+}
+
+.textEditsecondYear {}
 
 .text-37 {
   display: inline-block;
@@ -2222,7 +2246,7 @@ body {
 }
 
 .text-88,
-.six_summary{
+.six_summary {
   left: 6.5px;
   margin: 20px auto 0;
   position: relative;
@@ -2230,7 +2254,8 @@ body {
   font-weight: 300;
   line-height: 24px;
 }
-.six_summary strong{
+
+.six_summary strong {
   color: #ffffff;
   font-weight: 700;
 }
@@ -5276,7 +5301,7 @@ body {
 .eastdil-logo-copy-19 {
   display: block;
   left: 480.5px;
-  margin: 435px auto 0;
+  margin: 350px auto 0;
   position: relative;
 }
 
@@ -5290,6 +5315,8 @@ body {
   background: url(images/black_background_5.png) no-repeat;
   margin-left: -801.5px;
 }
+
+
 
 .logo-coloured-22 {
   display: block;
@@ -5318,9 +5345,9 @@ body {
   position: relative;
   width: 576px;
   background: url(images/background_11.png) no-repeat;
-  background-size: contain;
+  /* background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center; */
 }
 
 .logo-coloured-23 {

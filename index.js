@@ -12,7 +12,7 @@ require('dotenv').config();
 const bcrypt = require('bcryptjs');
 
 
-mongoose.connect('mongodb+srv://muhammadejaz:caloriesapp@cluster0.27ckrgb.mongodb.net/caloriesapp?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://muhammadejaz:offermemorandum@offer-memorandum.67cbex1.mongodb.net/')
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Could not connect to MongoDB...', err));
 app.use(express.json());
