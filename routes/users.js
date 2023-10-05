@@ -201,7 +201,6 @@ const generatePDF = async (payload) => {
         // .replace(/\[Units\]/g, payload.allData.page5.property_overview.Units)
         // .replace(/\[Avg. Unit Size\]/g, payload.allData.page5.property_overview["Avg. Unit Size"])
         // .replace(/\[Residential\]/g, payload.allData.page5.property_overview.Residential)
-        // .replace(/\[Stories\]/g, payload.allData.page5.property_overview.Stories)
         // .replace(/\[Parking Spaces\]/g, payload.allData.page5.property_overview["Parking Spaces"])
         // .replace(/\[Ground Lease Term\]/g, payload.allData.page5.property_overview["Ground Lease Term"])
 
