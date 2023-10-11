@@ -66,11 +66,15 @@ router.post('/runfunction', async (req, res) => {
         text_and_narratives_url
     };
     try {
+        console.time("pdf-generation");
         const pdfBuffer = await generatePDF(payload);
+        console.timeEnd("pdf-generation");
 
+        console.time("response-sending");
         res.setHeader('Content-Type', 'application/pdf');
-
         res.end(pdfBuffer);
+        console.timeEnd("response-sending");
+
     } catch (error) {
         console.error('Error generating PDF:', error);
         res.status(500).send({ error: 'Failed to generate PDF' });
@@ -93,6 +97,9 @@ router.post('/runfunction', async (req, res) => {
 //         }
 //     }
 // });
+
+
+
 
 
 const generatePDF = async (payload) => {
@@ -131,8 +138,18 @@ const generatePDF = async (payload) => {
     await page.goto(`file://${absolutePath}`, { waitUntil: 'networkidle2' });  // 'networkidle2' yahan use karein
     await page.reload({ waitUntil: 'networkidle2' });
 
+
+
     const templatePath = path.join(process.cwd(), '/offer_memorandum_creation/index.html');
     let template = fs.readFileSync(templatePath, 'utf-8');
+
+
+
+
+    page.on('requestfailed', request => {
+        console.log(`Request failed: ${request.url()}`);
+    });
+
     // console.log('this is my object', payload.allData.page5.property_overview.Address)
 
 
@@ -155,7 +172,7 @@ const generatePDF = async (payload) => {
 
     const logo1 = payload.image_LogourlArray[0] || 'N/A';  // Default image ya placeholder image ka link bhi yahan use kiya ja sakta hai
     const logo2 = payload.image_LogourlArray[1] || logo1; // Agar dusri image nahi hai toh pehli image ka link use hoga
-    
+
 
 
 
@@ -168,81 +185,78 @@ const generatePDF = async (payload) => {
     const floorPlan1 = payload.FloorPlanimage_LogourlArray[0] || 'N/A';  // Default image ya placeholder image ka link bhi yahan use kiya ja sakta hai
     const floorPlan2 = payload.FloorPlanimage_LogourlArray[1] || floorPlan1; // Agar dusri image nahi hai toh pehli image ka link use hoga
 
-    template = template.replace(/\[p1-bg\]/g, payload.image_urlArray[0])
-        .replace(/\[p4-bg\]/g, payload.image_urlArray[1])
-        .replace(/\[p40-bg\]/g, payload.image_urlArray[2])
-        .replace(/\[c7-bg\]/g, payload.image_urlArray[3])
-        .replace(/\[pholder-bg\]/g, payload.image_urlArray[4])
+    const getReplacementImage = (index) => payload.image_urlArray[index] || payload.image_urlArray[0] || "";
+
+    template = template
+        .replace(/\[p1-bg\]/g, getReplacementImage(0))
+        .replace(/\[p4-bg\]/g, getReplacementImage(1))
+        .replace(/\[p40-bg\]/g, getReplacementImage(2))
+        .replace(/\[c7-bg\]/g, getReplacementImage(3))
+        .replace(/\[pholder-bg\]/g, getReplacementImage(4))
 
         .replace(/\[logo1\]/g, logo1)
         .replace(/\[logo2\]/g, logo2)
 
         .replace(/\[FloorPlan1\]/g, floorPlan1)
         .replace(/\[FloorPlan2\]/g, floorPlan2)
-    
-        .replace(/\[page3\]/g, payload.allData.page3)
-        .replace(/\[page5_summary\]/g, payload.allData.page5.exe_summary)
-        .replace(/\[page6_summary\]/g, payload.allData.page6.tof_summary)
-        .replace(/\[page6_tabel\]/g, payload.allData.page6.tof_table)
-        .replace(/\[page7_summary\]/g, payload.allData.page7.um_summary)
-        .replace(/\[page7_tabel\]/g, payload.allData.page7.um_table)
-        .replace(/\[page9_tabel\]/g, payload.allData.page9)
-        .replace(/\[page10_tabel\]/g, payload.allData.page10)
-    
+
+
+
+
+
+        .replace(/\[cityName\]/g, payload.allData.page1?.city_name)
+        .replace(/\[Address3\]/g, payload.allData.page3?.address)
+
+
+
+        .replace(/\[page3\]/g, payload.allData?.page3)
+        .replace(/\[page5_summary\]/g, payload.allData.page5?.exe_summary)
+        .replace(/\[page6_summary\]/g, payload.allData.page6?.tof_summary)
+        .replace(/\[page6_tabel\]/g, payload.allData.page6?.tof_table)
+        .replace(/\[page7_summary\]/g, payload.allData.page7?.um_summary)
+        .replace(/\[page7_tabel\]/g, payload.allData.page7?.um_table)
+        .replace(/\[page9_tabel\]/g, payload.allData?.page9)
+        .replace(/\[page10_tabel\]/g, payload.allData?.page10)
         .replace(/\[page11\]/g, payload.allData.page11)
         .replace(/\[Product Name\]/g, "Good Night Vape")
 
 
-
-
-        // .replace(/\[Address\]/g, payload.allData.page5.property_overview.Address)
-        // .replace(/\[Location\]/g, payload.allData.page5.property_overview.Location)
-        // .replace(/\[Year Built\]/g, payload.allData.page5.property_overview["Year Built"])
-        // .replace(/\[Units\]/g, payload.allData.page5.property_overview.Units)
-        // .replace(/\[Avg. Unit Size\]/g, payload.allData.page5.property_overview["Avg. Unit Size"])
-        // .replace(/\[Residential\]/g, payload.allData.page5.property_overview.Residential)
-        // .replace(/\[Stories\]/g, payload.allData.page5.property_overview.Stories)
-        // .replace(/\[Parking Spaces\]/g, payload.allData.page5.property_overview["Parking Spaces"])
-        // .replace(/\[Ground Lease Term\]/g, payload.allData.page5.property_overview["Ground Lease Term"])
-
-
-        .replace(/\[Address\]/g, payload.allData.page5.property_overview.Address || 'N/A')
-        .replace(/\[Location\]/g, payload.allData.page5.property_overview.Location || 'N/A')
-        .replace(/\[Year Built\]/g, payload.allData.page5.property_overview["Year Built"] || 'N/A')
-        .replace(/\[Units\]/g, payload.allData.page5.property_overview.Units || 'N/A')
-        .replace(/\[Avg. Unit Size\]/g, payload.allData.page5.property_overview["Avg. Unit Size"] || 'N/A')
-        .replace(/\[Residential\]/g, payload.allData.page5.property_overview.Residential || 'N/A')
-        .replace(/\[Stories\]/g, payload.allData.page5.property_overview.Stories || 'N/A')
-        .replace(/\[Parking Spaces\]/g, payload.allData.page5.property_overview["Parking Spaces"] || 'N/A')
-        .replace(/\[Ground Lease Term\]/g, payload.allData.page5.property_overview["Ground Lease Term"] || 'N/A')
+        .replace(/\[Address\]/g, payload.allData.page5?.property_overview.Address || 'N/A')
+        .replace(/\[Location\]/g, payload.allData.page5?.property_overview.Location || 'N/A')
+        .replace(/\[Year Built\]/g, payload.allData.page5?.property_overview["Year Built"] || 'N/A')
+        .replace(/\[Units\]/g, payload.allData.page5?.property_overview.Units || 'N/A')
+        .replace(/\[Avg. Unit Size\]/g, payload.allData.page5?.property_overview["Avg. Unit Size"] || 'N/A')
+        .replace(/\[Residential\]/g, payload.allData.page5?.property_overview.Residential || 'N/A')
+        .replace(/\[Stories\]/g, payload.allData.page5?.property_overview.Stories || 'N/A')
+        .replace(/\[Parking Spaces\]/g, payload.allData.page5?.property_overview["Parking Spaces"] || 'N/A')
+        .replace(/\[Ground Lease Term\]/g, payload.allData.page5?.property_overview["Ground Lease Term"] || 'N/A')
 
 
 
 
-        .replace(/\[PROPERTY NAME\]/g, payload.allData.page8["PROPERTY NAME"] || 'N/A')
-        .replace(/\[PROPERTY ADDRESS\]/g, payload.allData.page8["PROPERTY ADDRESS"] || 'N/A')
-        .replace(/\[CITY\/COUNTY\]/g, payload.allData.page8["CITY/COUNTY"] || 'N/A')
+        .replace(/\[PROPERTY NAME\]/g, payload.allData.page8?.["PROPERTY NAME"] || 'N/A')
+        .replace(/\[PROPERTY ADDRESS\]/g, payload.allData.page8?.["PROPERTY ADDRESS"] || 'N/A')
+        .replace(/\[CITY\/COUNTY\]/g, payload.allData.page8?.["CITY/COUNTY"] || 'N/A')
 
-        .replace(/\[HVAC\]/g, payload.allData.page8["HVAC"] || 'N/A')
-        .replace(/\[MAIL BOXES\]/g, payload.allData.page8["MAIL BOXES"] || 'N/A')
-        .replace(/\[APN\]/g, payload.allData.page8["APN"] || 'N/A')
-        .replace(/\[YEAR BUILT\]/g, payload.allData.page8["YEAR BUILT"] || 'N/A')
-        .replace(/\[APARTMENT UNITS\]/g, payload.allData.page8["APARTMENT UNITS"] || 'N/A')
-        .replace(/\[STORIES\/STAIRS\]/g, payload.allData.page8["STORIES/STAIRS"] || 'N/A')
-        .replace(/\[CONSTRUCTION TYPE\]/g, payload.allData.page8["CONSTRUCTION TYPE"] || 'N/A')
-        .replace(/\[EXTERIOR WALL\]/g, payload.allData.page8["EXTERIOR WALL"] || 'N/A')
-        .replace(/\[INTERIOR WALL\]/g, payload.allData.page8["INTERIOR WALL"] || 'N/A')
-        .replace(/\[FOUNDATION\]/g, payload.allData.page8["FOUNDATION"] || 'N/A')
-        .replace(/\[CEILING HEIGHTS\]/g, payload.allData.page8["CEILING HEIGHTS"] || 'N/A')
-        .replace(/\[BUILDINGS\]/g, payload.allData.page8["BUILDINGS"] || 'N/A')
-        .replace(/\[WATER HEATER\]/g, payload.allData.page8["WATER HEATER"] || 'N/A')
-        .replace(/\[SITE SIZE ACRES\]/g, payload.allData.page8["SITE SIZE ACRES"] || 'N/A')
-        .replace(/\[DENSITY DU\/ACRE\]/g, payload.allData.page8["DENSITY DU/ACRE"] || 'N/A')
-        .replace(/\[APARTMENT RSF \]/g, payload.allData.page8["APARTMENT RSF "] || 'N/A')  // Note the space after RSF in the key
-        .replace(/\[APARTMENT AVG. RSF\]/g, payload.allData.page8["APARTMENT AVG. RSF"] || 'N/A')
-        .replace(/\[SMOKE DETECTORS\]/g, payload.allData.page8["SMOKE DETECTORS"] || 'N/A')
-        .replace(/\[FIRE PROTECTION\]/g, payload.allData.page8["FIRE PROTECTION"] || 'N/A');
-
+        .replace(/\[HVAC\]/g, payload.allData.page8?.["HVAC"] || 'N/A')
+        .replace(/\[MAIL BOXES\]/g, payload.allData.page8?.["MAIL BOXES"] || 'N/A')
+        .replace(/\[APN\]/g, payload.allData.page8?.["APN"] || 'N/A')
+        .replace(/\[YEAR BUILT\]/g, payload.allData.page8?.["YEAR BUILT"] || 'N/A')
+        .replace(/\[APARTMENT UNITS\]/g, payload.allData.page8?.["APARTMENT UNITS"] || 'N/A')
+        .replace(/\[STORIES\/STAIRS\]/g, payload.allData.page8?.["STORIES/STAIRS"] || 'N/A')
+        .replace(/\[CONSTRUCTION TYPE\]/g, payload.allData.page8?.["CONSTRUCTION TYPE"] || 'N/A')
+        .replace(/\[EXTERIOR WALL\]/g, payload.allData.page8?.["EXTERIOR WALL"] || 'N/A')
+        .replace(/\[INTERIOR WALL\]/g, payload.allData.page8?.["INTERIOR WALL"] || 'N/A')
+        .replace(/\[FOUNDATION\]/g, payload.allData.page8?.["FOUNDATION"] || 'N/A')
+        .replace(/\[CEILING HEIGHTS\]/g, payload.allData.page8?.["CEILING HEIGHTS"] || 'N/A')
+        .replace(/\[BUILDINGS\]/g, payload.allData.page8?.["BUILDINGS"] || 'N/A')
+        .replace(/\[WATER HEATER\]/g, payload.allData.page8?.["WATER HEATER"] || 'N/A')
+        .replace(/\[SITE SIZE ACRES\]/g, payload.allData.page8?.["SITE SIZE ACRES"] || 'N/A')
+        .replace(/\[DENSITY DU\/ACRE\]/g, payload.allData.page8?.["DENSITY DU/ACRE"] || 'N/A')
+        .replace(/\[APARTMENT RSF \]/g, payload.allData.page8?.["APARTMENT RSF "] || 'N/A')  // Note the space after RSF in the key
+        .replace(/\[APARTMENT AVG. RSF\]/g, payload.allData.page8?.["APARTMENT AVG. RSF"] || 'N/A')
+        .replace(/\[SMOKE DETECTORS\]/g, payload.allData.page8?.["SMOKE DETECTORS"] || 'N/A')
+        .replace(/\[FIRE PROTECTION\]/g, payload.allData.page8?.["FIRE PROTECTION"] || 'N/A');
 
 
 
@@ -252,12 +266,18 @@ const generatePDF = async (payload) => {
 
 
     await page.evaluate((template, payload) => {
-        document.body.innerHTML = template;
+        console.log("Payload before injection:", payload);
 
-        window.myInjectedData = payload;  // if you still want this line
+        document.body.innerHTML = template;
+        window.myInjectedData = payload;
+        console.log('Injected Data:', window.myInjectedData);
         const event = new Event('dataInjected');
         window.dispatchEvent(event);
-    }, template);
+    }, template, payload);
+
+
+
+
     await delay(10000);
     const myData = await page.evaluate(() => {
         return window.myInjectedData;
@@ -358,9 +378,9 @@ const delay = (time) => {
 
 router.post('/proxyLambda', async (req, res) => {
 
-    console.log('this is my data', req.body )
+    console.log('this is my data', req.body)
     try {
-        const response = await axios.post("http://192.168.18.90:3092/get_information", req.body, {
+        const response = await axios.post("http://192.168.18.90:3095/get_information", req.body, {
             headers: {
                 'Content-Type': 'application/json'
             }
