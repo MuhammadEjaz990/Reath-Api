@@ -6860,7 +6860,7 @@ body {
 
 .CommunitiesAmenitiesDiv {
   background-color: #181818;
-  height: 372px;
+  /* height: 372px; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   padding-top: 30px;
@@ -6869,7 +6869,7 @@ body {
 
 .InteriorAmenitiesDiv {
   background-color: #181818;
-  height: 372px;
+  /* height: 372px; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   padding-top: 30px;
