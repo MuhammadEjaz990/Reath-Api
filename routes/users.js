@@ -105,17 +105,17 @@ router.post('/runfunction', async (req, res) => {
 const generatePDF = async (payload) => {
     console.log("Enter to generate book");
 
-    const dom = new JSDOM(payload.allData.page10);
-    const document = dom.window.document;
+    // const dom = new JSDOM(payload.allData.page10);
+    // const document = dom.window.document;
 
-    // Get all img tags (assuming there's at least one)
-    const images = document.querySelectorAll('img');
-    for (const img of images) {
-        img.setAttribute('src', payload.image_LogourlArray[0]);
-    }
+    // // Get all img tags (assuming there's at least one)
+    // const images = document.querySelectorAll('img');
+    // for (const img of images) {
+    //     img.setAttribute('src', payload.image_LogourlArray[0]);
+    // }
 
-    // Serialize the modified HTML back into the payload
-    payload.allData.page10 = dom.serialize();
+    // // Serialize the modified HTML back into the payload
+    // payload.allData.page10 = dom.serialize();
 
     const browser = await puppeteer.launch({
         headless: true // Set headless to true or false
@@ -209,6 +209,34 @@ const generatePDF = async (payload) => {
 
 
 
+
+        .replace(/\[page8left\]/g, payload.allData.page8?.left)
+        .replace(/\[page8right\]/g, payload.allData.page8?.right)
+
+
+        .replace(/\[page9right\]/g, payload.allData.page9?.right)
+
+        .replace(/\[page10left\]/g, payload.allData.page10?.left)
+        .replace(/\[page10right\]/g, payload.allData.page10?.right)
+
+
+        .replace(/\[page11left\]/g, payload.allData.page11?.left)
+
+
+        .replace(/\[page12left\]/g, payload.allData.page12?.left)
+
+
+        .replace(/\[page13left\]/g, payload.allData.page13?.left)
+
+
+
+        .replace(/\[page15offer_terms\]/g, payload.allData.page15?.offer_terms)
+        .replace(/\[page15war_room\]/g, payload.allData.page15?.war_room)
+        .replace(/\[page15offer_due\]/g, payload.allData.page15?.offer_due)
+
+
+
+
         .replace(/\[page3\]/g, payload.allData?.page3)
         .replace(/\[page5_summary\]/g, payload.allData.page5?.exe_summary)
         .replace(/\[page6_summary\]/g, payload.allData.page6?.tof_summary)
@@ -216,51 +244,47 @@ const generatePDF = async (payload) => {
         .replace(/\[page7_summary\]/g, payload.allData.page7?.um_summary)
         .replace(/\[page7_tabel\]/g, payload.allData.page7?.um_table)
         .replace(/\[page9_tabel\]/g, payload.allData?.page9)
-        .replace(/\[page10_tabel\]/g, payload.allData?.page10)
+        // .replace(/\[page10_tabel\]/g, payload.allData?.page10)
         .replace(/\[page11\]/g, payload.allData.page11)
         .replace(/\[Product Name\]/g, "Good Night Vape")
 
 
-        .replace(/\[Address\]/g, payload.allData.page5?.property_overview.Address || 'N/A')
-        .replace(/\[Location\]/g, payload.allData.page5?.property_overview.Location || 'N/A')
-        .replace(/\[Year Built\]/g, payload.allData.page5?.property_overview["Year Built"] || 'N/A')
-        .replace(/\[Units\]/g, payload.allData.page5?.property_overview.Units || 'N/A')
-        .replace(/\[Avg. Unit Size\]/g, payload.allData.page5?.property_overview["Avg. Unit Size"] || 'N/A')
-        .replace(/\[Residential\]/g, payload.allData.page5?.property_overview.Residential || 'N/A')
-        .replace(/\[Stories\]/g, payload.allData.page5?.property_overview.Stories || 'N/A')
-        .replace(/\[Parking Spaces\]/g, payload.allData.page5?.property_overview["Parking Spaces"] || 'N/A')
-        .replace(/\[Ground Lease Term\]/g, payload.allData.page5?.property_overview["Ground Lease Term"] || 'N/A')
+        // .replace(/\[Address\]/g, payload.allData.page5?.property_overview.Address || 'N/A')
+        // .replace(/\[Location\]/g, payload.allData.page5?.property_overview.Location || 'N/A')
+        // .replace(/\[Year Built\]/g, payload.allData.page5?.property_overview["Year Built"] || 'N/A')
+        // .replace(/\[Units\]/g, payload.allData.page5?.property_overview.Units || 'N/A')
+        // .replace(/\[Avg. Unit Size\]/g, payload.allData.page5?.property_overview["Avg. Unit Size"] || 'N/A')
+        // .replace(/\[Residential\]/g, payload.allData.page5?.property_overview.Residential || 'N/A')
+        // .replace(/\[Stories\]/g, payload.allData.page5?.property_overview.Stories || 'N/A')
+        // .replace(/\[Parking Spaces\]/g, payload.allData.page5?.property_overview["Parking Spaces"] || 'N/A')
+        // .replace(/\[Ground Lease Term\]/g, payload.allData.page5?.property_overview["Ground Lease Term"] || 'N/A')
 
 
 
 
-        .replace(/\[PROPERTY NAME\]/g, payload.allData.page8?.["PROPERTY NAME"] || 'N/A')
-        .replace(/\[PROPERTY ADDRESS\]/g, payload.allData.page8?.["PROPERTY ADDRESS"] || 'N/A')
-        .replace(/\[CITY\/COUNTY\]/g, payload.allData.page8?.["CITY/COUNTY"] || 'N/A')
+        // .replace(/\[PROPERTY NAME\]/g, payload.allData.page8?.["PROPERTY NAME"] || 'N/A')
+        // .replace(/\[PROPERTY ADDRESS\]/g, payload.allData.page8?.["PROPERTY ADDRESS"] || 'N/A')
+        // .replace(/\[CITY\/COUNTY\]/g, payload.allData.page8?.["CITY/COUNTY"] || 'N/A')
 
-        .replace(/\[HVAC\]/g, payload.allData.page8?.["HVAC"] || 'N/A')
-        .replace(/\[MAIL BOXES\]/g, payload.allData.page8?.["MAIL BOXES"] || 'N/A')
-        .replace(/\[APN\]/g, payload.allData.page8?.["APN"] || 'N/A')
-        .replace(/\[YEAR BUILT\]/g, payload.allData.page8?.["YEAR BUILT"] || 'N/A')
-        .replace(/\[APARTMENT UNITS\]/g, payload.allData.page8?.["APARTMENT UNITS"] || 'N/A')
-        .replace(/\[STORIES\/STAIRS\]/g, payload.allData.page8?.["STORIES/STAIRS"] || 'N/A')
-        .replace(/\[CONSTRUCTION TYPE\]/g, payload.allData.page8?.["CONSTRUCTION TYPE"] || 'N/A')
-        .replace(/\[EXTERIOR WALL\]/g, payload.allData.page8?.["EXTERIOR WALL"] || 'N/A')
-        .replace(/\[INTERIOR WALL\]/g, payload.allData.page8?.["INTERIOR WALL"] || 'N/A')
-        .replace(/\[FOUNDATION\]/g, payload.allData.page8?.["FOUNDATION"] || 'N/A')
-        .replace(/\[CEILING HEIGHTS\]/g, payload.allData.page8?.["CEILING HEIGHTS"] || 'N/A')
-        .replace(/\[BUILDINGS\]/g, payload.allData.page8?.["BUILDINGS"] || 'N/A')
-        .replace(/\[WATER HEATER\]/g, payload.allData.page8?.["WATER HEATER"] || 'N/A')
-        .replace(/\[SITE SIZE ACRES\]/g, payload.allData.page8?.["SITE SIZE ACRES"] || 'N/A')
-        .replace(/\[DENSITY DU\/ACRE\]/g, payload.allData.page8?.["DENSITY DU/ACRE"] || 'N/A')
-        .replace(/\[APARTMENT RSF \]/g, payload.allData.page8?.["APARTMENT RSF "] || 'N/A')  // Note the space after RSF in the key
-        .replace(/\[APARTMENT AVG. RSF\]/g, payload.allData.page8?.["APARTMENT AVG. RSF"] || 'N/A')
-        .replace(/\[SMOKE DETECTORS\]/g, payload.allData.page8?.["SMOKE DETECTORS"] || 'N/A')
-        .replace(/\[FIRE PROTECTION\]/g, payload.allData.page8?.["FIRE PROTECTION"] || 'N/A');
-
-
-
-
+        // .replace(/\[HVAC\]/g, payload.allData.page8?.["HVAC"] || 'N/A')
+        // .replace(/\[MAIL BOXES\]/g, payload.allData.page8?.["MAIL BOXES"] || 'N/A')
+        // .replace(/\[APN\]/g, payload.allData.page8?.["APN"] || 'N/A')
+        // .replace(/\[YEAR BUILT\]/g, payload.allData.page8?.["YEAR BUILT"] || 'N/A')
+        // .replace(/\[APARTMENT UNITS\]/g, payload.allData.page8?.["APARTMENT UNITS"] || 'N/A')
+        // .replace(/\[STORIES\/STAIRS\]/g, payload.allData.page8?.["STORIES/STAIRS"] || 'N/A')
+        // .replace(/\[CONSTRUCTION TYPE\]/g, payload.allData.page8?.["CONSTRUCTION TYPE"] || 'N/A')
+        // .replace(/\[EXTERIOR WALL\]/g, payload.allData.page8?.["EXTERIOR WALL"] || 'N/A')
+        // .replace(/\[INTERIOR WALL\]/g, payload.allData.page8?.["INTERIOR WALL"] || 'N/A')
+        // .replace(/\[FOUNDATION\]/g, payload.allData.page8?.["FOUNDATION"] || 'N/A')
+        // .replace(/\[CEILING HEIGHTS\]/g, payload.allData.page8?.["CEILING HEIGHTS"] || 'N/A')
+        // .replace(/\[BUILDINGS\]/g, payload.allData.page8?.["BUILDINGS"] || 'N/A')
+        // .replace(/\[WATER HEATER\]/g, payload.allData.page8?.["WATER HEATER"] || 'N/A')
+        // .replace(/\[SITE SIZE ACRES\]/g, payload.allData.page8?.["SITE SIZE ACRES"] || 'N/A')
+        // .replace(/\[DENSITY DU\/ACRE\]/g, payload.allData.page8?.["DENSITY DU/ACRE"] || 'N/A')
+        // .replace(/\[APARTMENT RSF \]/g, payload.allData.page8?.["APARTMENT RSF "] || 'N/A')  // Note the space after RSF in the key
+        // .replace(/\[APARTMENT AVG. RSF\]/g, payload.allData.page8?.["APARTMENT AVG. RSF"] || 'N/A')
+        // .replace(/\[SMOKE DETECTORS\]/g, payload.allData.page8?.["SMOKE DETECTORS"] || 'N/A')
+        // .replace(/\[FIRE PROTECTION\]/g, payload.allData.page8?.["FIRE PROTECTION"] || 'N/A');
 
 
 
