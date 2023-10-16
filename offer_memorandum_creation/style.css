@@ -1372,7 +1372,8 @@ body {
 .eastdil-logo-copy-4 {
   display: block;
   right: 70px;
-  bottom: 70px;
+  /* bottom: 70px; */
+  bottom: -133px;
   /* margin: 99px auto 0; */
   position: absolute;
 }
