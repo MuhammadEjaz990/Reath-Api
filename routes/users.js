@@ -26,16 +26,16 @@ const multer = require('multer');
 
 
 
-const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, './offer_memorandum_creation/images');  // Save to the 'images' directory inside 'offer_memorandum_creation'.
-    },
-    filename: function (req, file, cb) {
-        cb(null, 'logo_transparent.png');
-    }
-});
+// const storage = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//         cb(null, './offer_memorandum_creation/images');  // Save to the 'images' directory inside 'offer_memorandum_creation'.
+//     },
+//     filename: function (req, file, cb) {
+//         cb(null, 'logo_transparent.png');
+//     }
+// });
 
-const upload = multer({ storage: storage });
+// const upload = multer({ storage: storage });
 
 // router.post('/runfunction', upload.single('image'), async (req, res) => {
 //     if (req.file) {
@@ -86,11 +86,12 @@ router.post('/runfunction', async (req, res) => {
 const generatePDF = async (payload) => {
     console.log("Enter to generate book")
     const browser = await puppeteer.launch({
-        headless: true 
+        headless: "new"
     });
 
+
     const page = await browser.newPage();
-    await page.setCacheEnabled(false); 
+    await page.setCacheEnabled(false);
     page.on('error', err => {
         console.error('Page error:', err);
     });
@@ -102,7 +103,8 @@ const generatePDF = async (payload) => {
         console.log('PAGE LOG:', msg.text());
     });
 
-    const absolutePath = path.resolve('/home/ejaz/Project/Reath_Project/Reath-api/offer_memorandum_creation/index.html');
+    const absolutePath = path.resolve('/home/ubuntu/Reath-Api/offer_memorandum_creation/index.html');
+    // const absolutePath = path.resolve('/home/ejaz/Project/Reath_Project/Reath-api/offer_memorandum_creation/index.html');
     await page.goto(`file://${absolutePath}`, { waitUntil: 'networkidle2' });
     await page.reload({ waitUntil: 'networkidle2' });
 
@@ -118,20 +120,30 @@ const generatePDF = async (payload) => {
         console.log(`Request failed: ${request.url()}`);
     });
 
-    const logo1 = payload.image_LogourlArray[0] || 'N/A'; 
-    const logo2 = payload.image_LogourlArray[1] || logo1; 
+    const logo1 = payload.image_LogourlArray[0] || 'N/A';
+    const logo2 = payload.image_LogourlArray[1] || logo1;
 
 
 
 
 
 
+    const defaultImage = 'N/A';
+
+    let images = payload.FloorPlanimage_LogourlArray.length > 0 ? payload.FloorPlanimage_LogourlArray : [defaultImage];
+
+    // If less than 6 images are uploaded, repeat the existing ones to fill all the 6 placeholders.
+    while (images.length < 6) {
+        images = images.concat(images);
+    }
+
+    // Now, images[] contains at least 6 URLs. Take the first 6.
+    images = images.slice(0, 6);
 
 
 
-
-    const floorPlan1 = payload.FloorPlanimage_LogourlArray[0] || 'N/A';  
-    const floorPlan2 = payload.FloorPlanimage_LogourlArray[1] || floorPlan1; 
+    // const floorPlan1 = payload.FloorPlanimage_LogourlArray[0] || 'N/A';
+    // const floorPlan2 = payload.FloorPlanimage_LogourlArray[1] || floorPlan1;
 
     const getReplacementImage = (index) => payload.image_urlArray[index] || payload.image_urlArray[0] || "";
 
@@ -145,10 +157,15 @@ const generatePDF = async (payload) => {
         .replace(/\[logo1\]/g, logo1)
         .replace(/\[logo2\]/g, logo2)
 
-        .replace(/\[FloorPlan1\]/g, floorPlan1)
-        .replace(/\[FloorPlan2\]/g, floorPlan2)
+        // .replace(/\[FloorPlan1\]/g, floorPlan1)
+        // .replace(/\[FloorPlan2\]/g, floorPlan2)
 
-
+        .replace(/\[FloorPlan1\]/g, images[0])
+        .replace(/\[FloorPlan2\]/g, images[1])
+        .replace(/\[FloorPlan3\]/g, images[2])
+        .replace(/\[FloorPlan4\]/g, images[3])
+        .replace(/\[FloorPlan5\]/g, images[4])
+        .replace(/\[FloorPlan6\]/g, images[5])
 
 
 
@@ -192,7 +209,6 @@ const generatePDF = async (payload) => {
         .replace(/\[page7_summary\]/g, payload.allData.page7?.um_summary)
         .replace(/\[page7_tabel\]/g, payload.allData.page7?.um_table)
         .replace(/\[page9_tabel\]/g, payload.allData?.page9)
-        // .replace(/\[page10_tabel\]/g, payload.allData?.page10)
         .replace(/\[page11\]/g, payload.allData.page11)
         .replace(/\[Product Name\]/g, "Good Night Vape")
 
@@ -234,10 +250,10 @@ const generatePDF = async (payload) => {
     //     height: '1080px',
     //     printBackground: true,
     // });
-    const outputPath = path.resolve('./output.pdf');
-    fs.writeFileSync(outputPath, pdfBuffer);
+    // const outputPath = path.resolve('./output.pdf');
+    // fs.writeFileSync(outputPath, pdfBuffer);
 
-    console.log(`PDF saved to ${outputPath}`);
+    console.log(`PDF Created Done`);
 
     await browser.close();
 
@@ -254,7 +270,7 @@ router.post('/proxyLambda', async (req, res) => {
 
     console.log('this is my data', req.body)
     try {
-        const response = await axios.post("http://192.168.18.90:3095/get_information", req.body, {
+        const response = await axios.post("http://103.31.104.196:3095/get_information", req.body, {
             headers: {
                 'Content-Type': 'application/json'
             }

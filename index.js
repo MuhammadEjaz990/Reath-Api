@@ -6,15 +6,21 @@ const ImageData = require('./models/ImageData');
 
 
 const app = express();
-const PORT = 3001;
+const PORT = 7779;
 const ngrok = require('ngrok');
 require('dotenv').config();
 const bcrypt = require('bcryptjs');
 
 
-mongoose.connect('mongodb+srv://muhammadejaz:offermemorandum@offer-memorandum.67cbex1.mongodb.net/')
-    .then(() => console.log('Connected to MongoDB'))
-    .catch(err => console.error('Could not connect to MongoDB...', err));
+
+
+
+// mongoose.connect('mongodb+srv://muhammadejaz:offermemorandum@offer-memorandum.67cbex1.mongodb.net/')
+//     .then(() => console.log('Connected to MongoDB'))
+//     .catch(err => console.error('Could not connect to MongoDB...', err));
+
+
+
 app.use(express.json());
 // Use the cors middleware
 app.use(cors({

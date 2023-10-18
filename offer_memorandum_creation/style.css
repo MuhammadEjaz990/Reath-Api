@@ -9857,7 +9857,17 @@ body {
   font-weight: 300;
   letter-spacing: 0.05em;
 }
-
+.text-280edit {
+  left: 107%;
+  position: absolute;
+  top: -57px;
+  color: #fbfbfb;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 40px;
+  text-shadow: 2.007392px 2.229434px 7px rgba(0, 0, 0, 0.35);
+  margin-left: -344.5px;
+}
 .text-613 {
   margin: 10px 0 0;
   color: #000000;
