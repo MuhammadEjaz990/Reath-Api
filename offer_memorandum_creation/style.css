@@ -1913,13 +1913,17 @@ body {
   float: left;
   margin: 4px 0 0;
   position: relative;
-  width: 890px;
+  width: 1228px;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 28px;
 }
 
 .row-50 {
   margin: 0 auto;
   position: relative;
-  width: 880px;
+  /* width: 880px; */
 }
 
 .text-69 {
@@ -5543,7 +5547,7 @@ body {
 
 .col-61 {
   float: right;
-  margin: 0px 0 0;
+  margin: 75px 0 0;
   position: relative;
   width: 964px;
 }
@@ -5558,7 +5562,7 @@ body {
 }
 
 .text-286 {
-  margin: 45px 0 0;
+  margin: 45px 0px;
   color: #be531b;
   font-size: 1.25rem;
   /* 20px / 16px = 1.25rem */
@@ -6055,17 +6059,24 @@ body {
   margin: 57px 0 0;
   padding: 21px 0 44px;
   position: relative;
-  width: 100%;
+  width: 84%;
   /* 1603px / 1603px = 100% */
-  background: url(images/white_backround.png) no-repeat center 0;
+  /* background: url(images/white_backround.png) no-repeat center 0; */
   background-position: center top;
+  margin: auto;
+  background: white;
 }
 
 .l-constrained-27 {
   margin: 0 auto;
   padding: 0 50px;
   position: relative;
-  width: 1603px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  flex-wrap: wrap;
+  row-gap: 15px
 }
 
 .row-72 {
@@ -6175,7 +6186,7 @@ body {
 
 .eastdil-logo-copy-21 {
   float: right;
-  margin: 45px 0 0;
+  margin: 213px 21px 0;
 }
 
 .page-29 {
@@ -6222,6 +6233,9 @@ body {
   position: relative;
   right: 12.5px;
   width: 678px;
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+row-gap: 15px;
 }
 
 .wrapper-131 {
@@ -6233,10 +6247,10 @@ body {
 }
 
 .company-logo-13 {
-  left: 50%;
+  /* left: 50%;
   position: absolute;
   top: 0;
-  margin-left: -206px;
+  margin-left: -206px; */
 }
 
 .company-logo-14 {
@@ -6481,13 +6495,17 @@ body {
   padding: 0 49px 0 211px;
   position: relative;
   width: 1603px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
 }
+
 
 .col-39 {
   float: left;
   margin: 2px 0 0;
   position: relative;
-  width: 238px;
+  /* width: 238px; */
 }
 
 .text-344 {
@@ -6500,7 +6518,7 @@ body {
 
 .text-345 {
   margin: 25px 0 0 5px;
-  width: 196px;
+  /* width: 196px; */
   font-weight: bold;
   line-height: 24px;
   text-transform: uppercase;
@@ -9857,6 +9875,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.05em;
 }
+
 .text-280edit {
   left: 107%;
   position: absolute;
@@ -9868,6 +9887,7 @@ body {
   text-shadow: 2.007392px 2.229434px 7px rgba(0, 0, 0, 0.35);
   margin-left: -344.5px;
 }
+
 .text-613 {
   margin: 10px 0 0;
   color: #000000;

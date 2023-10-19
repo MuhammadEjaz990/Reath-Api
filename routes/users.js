@@ -166,13 +166,14 @@ const generatePDF = async (payload) => {
         .replace(/\[FloorPlan4\]/g, images[3])
         .replace(/\[FloorPlan5\]/g, images[4])
         .replace(/\[FloorPlan6\]/g, images[5])
-
-
-
+        
+        
+        
         .replace(/\[cityName\]/g, payload.allData.page1?.city_name)
         .replace(/\[Address3\]/g, payload.allData.page3?.address)
-
-
+        
+        
+        .replace(/\[page5_summary\]/g, payload.allData.page5?.exe_summary)
 
 
         .replace(/\[page8left\]/g, payload.allData.page8?.left)
@@ -201,18 +202,14 @@ const generatePDF = async (payload) => {
 
 
 
-
-        .replace(/\[page3\]/g, payload.allData?.page3)
-        .replace(/\[page5_summary\]/g, payload.allData.page5?.exe_summary)
-        .replace(/\[page6_summary\]/g, payload.allData.page6?.tof_summary)
-        .replace(/\[page6_tabel\]/g, payload.allData.page6?.tof_table)
-        .replace(/\[page7_summary\]/g, payload.allData.page7?.um_summary)
-        .replace(/\[page7_tabel\]/g, payload.allData.page7?.um_table)
-        .replace(/\[page9_tabel\]/g, payload.allData?.page9)
-        .replace(/\[page11\]/g, payload.allData.page11)
-        .replace(/\[Product Name\]/g, "Good Night Vape")
+        .replace(/\[page26Left\]/g, payload.allData.page26?.left)
 
 
+
+        .replace(/\[page27_summary\]/g, payload.allData.page27?.um_summary)
+        .replace(/\[page29_growing_biotech\]/g, payload.allData. page29?.growing_biotech)
+        .replace(/\[page29_capital\]/g, payload.allData. page29?.capital)
+       
     await page.evaluate((template, payload) => {
         console.log("Payload before injection:", payload);
 
