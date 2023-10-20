@@ -219,6 +219,12 @@ const generatePDF = async (payload) => {
         .replace(/\[page29_growing_biotech\]/g, payload.allData.page29?.growing_biotech)
         .replace(/\[page29_capital\]/g, payload.allData.page29?.capital)
 
+
+
+        .replace(/\[page31_downtown\]/g, payload.allData.page31?.downtown)
+        .replace(/\[page31_conventioncenter\]/g, payload.allData.page31?.conventioncenter)
+        .replace(/\[page31_goldencenter\]/g, payload.allData.page31?.goldencenter)
+
     await page.evaluate((template, payload) => {
         console.log("Payload before injection:", payload);
 
