@@ -166,13 +166,13 @@ const generatePDF = async (payload) => {
         .replace(/\[FloorPlan4\]/g, images[3])
         .replace(/\[FloorPlan5\]/g, images[4])
         .replace(/\[FloorPlan6\]/g, images[5])
-        
-        
-        
+
+
+
         .replace(/\[cityName\]/g, payload.allData.page1?.city_name)
         .replace(/\[Address3\]/g, payload.allData.page3?.address)
-        
-        
+
+
         .replace(/\[page5_summary\]/g, payload.allData.page5?.exe_summary)
 
 
@@ -207,9 +207,15 @@ const generatePDF = async (payload) => {
 
 
         .replace(/\[page27_summary\]/g, payload.allData.page27?.um_summary)
-        .replace(/\[page29_growing_biotech\]/g, payload.allData. page29?.growing_biotech)
-        .replace(/\[page29_capital\]/g, payload.allData. page29?.capital)
-       
+        .replace(/\[page29_growing_biotech\]/g, payload.allData.page29?.growing_biotech)
+        .replace(/\[page29_capital\]/g, payload.allData.page29?.capital)
+
+
+
+        .replace(/\[page31_downtown\]/g, payload.allData.page31?.downtown)
+        .replace(/\[page31_conventioncenter\]/g, payload.allData.page31?.conventioncenter)
+        .replace(/\[page31_goldencenter\]/g, payload.allData.page31?.goldencenter)
+
     await page.evaluate((template, payload) => {
         console.log("Payload before injection:", payload);
 
