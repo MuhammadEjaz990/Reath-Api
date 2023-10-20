@@ -4,6 +4,8 @@ const path = require('path');
 const puppeteer = require('puppeteer');
 const express = require('express');
 
+
+const config = require('../config');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const PORT = 3001;
@@ -17,7 +19,7 @@ const ImageData = require('../models/ImageData');
 const bcrypt = require('bcryptjs');
 const { JSDOM } = require('jsdom');
 
-
+const env = process.env.NODE_ENV || "development"; 
 
 
 const axios = require('axios');
@@ -103,7 +105,14 @@ const generatePDF = async (payload) => {
         console.log('PAGE LOG:', msg.text());
     });
 
-    const absolutePath = path.resolve('/home/ubuntu/Reath-Api/offer_memorandum_creation/index.html');
+
+    const absolutePath = path.resolve(config[env].path);
+
+
+
+
+
+    // // const absolutePath = path.resolve('/home/ubuntu/Reath-Api/offer_memorandum_creation/index.html');
     // const absolutePath = path.resolve('/home/ejaz/Project/Reath_Project/Reath-api/offer_memorandum_creation/index.html');
     await page.goto(`file://${absolutePath}`, { waitUntil: 'networkidle2' });
     await page.reload({ waitUntil: 'networkidle2' });
@@ -166,13 +175,13 @@ const generatePDF = async (payload) => {
         .replace(/\[FloorPlan4\]/g, images[3])
         .replace(/\[FloorPlan5\]/g, images[4])
         .replace(/\[FloorPlan6\]/g, images[5])
-        
-        
-        
+
+
+
         .replace(/\[cityName\]/g, payload.allData.page1?.city_name)
         .replace(/\[Address3\]/g, payload.allData.page3?.address)
-        
-        
+
+
         .replace(/\[page5_summary\]/g, payload.allData.page5?.exe_summary)
 
 
@@ -207,9 +216,9 @@ const generatePDF = async (payload) => {
 
 
         .replace(/\[page27_summary\]/g, payload.allData.page27?.um_summary)
-        .replace(/\[page29_growing_biotech\]/g, payload.allData. page29?.growing_biotech)
-        .replace(/\[page29_capital\]/g, payload.allData. page29?.capital)
-       
+        .replace(/\[page29_growing_biotech\]/g, payload.allData.page29?.growing_biotech)
+        .replace(/\[page29_capital\]/g, payload.allData.page29?.capital)
+
     await page.evaluate((template, payload) => {
         console.log("Payload before injection:", payload);
 
@@ -267,7 +276,7 @@ router.post('/proxyLambda', async (req, res) => {
 
     console.log('this is my data', req.body)
     try {
-        const response = await axios.post("http://103.31.104.196:3095/get_information", req.body, {
+        const response = await axios.post(config[env].url, req.body, {
             headers: {
                 'Content-Type': 'application/json'
             }
