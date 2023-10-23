@@ -496,24 +496,26 @@ const PassProjectData = (ProjectData) => {
 
 
 
-
   // unitMix -------------------------------------------------------------------------------------------
-  // let page27 = ProjectData.allData.page27
 
-  let page27 = { "header": [{ "id": "Unit Type", "label": "Unit Type" }, { "id": "# of Units", "label": "# of Units" }, { "id": "% of Unit Mix", "label": "% of Unit Mix" }, { "id": "Size (SF)", "label": "Size (SF)" }, { "id": "Avg. Market Rent", "label": "Avg. Market Rent" }, { "id": "Avg. Market Rent PSF", "label": "Avg. Market Rent PSF" }], "rows": [{ "Unit Type": " A1 (1 Bed / 1 Bath) ", "# of Units": "31", "% of Unit Mix": "10%", "Size (SF)": "627", "Avg. Market Rent": "$1,677", "Avg. Market Rent PSF": "$2.67" }, { "Unit Type": " A2 (1 Bed / 1 Bath) ", "# of Units": "19", "% of Unit Mix": "6%", "Size (SF)": "691", "Avg. Market Rent": "$1,720", "Avg. Market Rent PSF": "$2.49" }, { "Unit Type": " A3 (1 Bed / 1 Bath) ", "# of Units": "16", "% of Unit Mix": "5%", "Size (SF)": "750", "Avg. Market Rent": "$1,782", "Avg. Market Rent PSF": "$2.38" }, { "Unit Type": " B1 (2 Bed / 1 Bath) ", "# of Units": "27", "% of Unit Mix": "9%", "Size (SF)": "893", "Avg. Market Rent": "$2,007", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B2 (2 Bed / 2 Bath) ", "# of Units": "5", "% of Unit Mix": "2%", "Size (SF)": "917", "Avg. Market Rent": "$2,059", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B3 (2 Bed / 2 Bath) ", "# of Units": "42", "% of Unit Mix": "14%", "Size (SF)": "932", "Avg. Market Rent": "$2,028", "Avg. Market Rent PSF": "$2.18" }, { "Unit Type": " B4 (2 Bed / 2 Bath) ", "# of Units": "82", "% of Unit Mix": "27%", "Size (SF)": "1,072", "Avg. Market Rent": "$2,090", "Avg. Market Rent PSF": "$1.95" }, { "Unit Type": " B5 (2 Bed / 2 Bath) ", "# of Units": "54", "% of Unit Mix": "18%", "Size (SF)": "1,111", "Avg. Market Rent": "$2,111", "Avg. Market Rent PSF": "$1.90" }, { "Unit Type": " C1 (3 Bed / 2 Bath) ", "# of Units": "28", "% of Unit Mix": "9%", "Size (SF)": "1,294", "Avg. Market Rent": "$2,540", "Avg. Market Rent PSF": "$1.96" }, { "Unit Type": "Total / Average", "# of Units": "304", "% of Unit Mix": "100%", "Size (SF)": "975", "Avg. Market Rent": "$2,037", "Avg. Market Rent PSF": "$2.09" }] }
+
+  // page27_table1 
+  let page27_table1 = ProjectData.allData.page27.tables.table1
+
+  // let page27_table1 = { "header": [{ "id": "Unit Type", "label": "Unit Type" }, { "id": "# of Units", "label": "# of Units" }, { "id": "% of Unit Mix", "label": "% of Unit Mix" }, { "id": "Size (SF)", "label": "Size (SF)" }, { "id": "Avg. Market Rent", "label": "Avg. Market Rent" }, { "id": "Avg. Market Rent PSF", "label": "Avg. Market Rent PSF" }], "rows": [{ "Unit Type": " A1 (1 Bed / 1 Bath) ", "# of Units": "31", "% of Unit Mix": "10%", "Size (SF)": "627", "Avg. Market Rent": "$1,677", "Avg. Market Rent PSF": "$2.67" }, { "Unit Type": " A2 (1 Bed / 1 Bath) ", "# of Units": "19", "% of Unit Mix": "6%", "Size (SF)": "691", "Avg. Market Rent": "$1,720", "Avg. Market Rent PSF": "$2.49" }, { "Unit Type": " A3 (1 Bed / 1 Bath) ", "# of Units": "16", "% of Unit Mix": "5%", "Size (SF)": "750", "Avg. Market Rent": "$1,782", "Avg. Market Rent PSF": "$2.38" }, { "Unit Type": " B1 (2 Bed / 1 Bath) ", "# of Units": "27", "% of Unit Mix": "9%", "Size (SF)": "893", "Avg. Market Rent": "$2,007", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B2 (2 Bed / 2 Bath) ", "# of Units": "5", "% of Unit Mix": "2%", "Size (SF)": "917", "Avg. Market Rent": "$2,059", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B3 (2 Bed / 2 Bath) ", "# of Units": "42", "% of Unit Mix": "14%", "Size (SF)": "932", "Avg. Market Rent": "$2,028", "Avg. Market Rent PSF": "$2.18" }, { "Unit Type": " B4 (2 Bed / 2 Bath) ", "# of Units": "82", "% of Unit Mix": "27%", "Size (SF)": "1,072", "Avg. Market Rent": "$2,090", "Avg. Market Rent PSF": "$1.95" }, { "Unit Type": " B5 (2 Bed / 2 Bath) ", "# of Units": "54", "% of Unit Mix": "18%", "Size (SF)": "1,111", "Avg. Market Rent": "$2,111", "Avg. Market Rent PSF": "$1.90" }, { "Unit Type": " C1 (3 Bed / 2 Bath) ", "# of Units": "28", "% of Unit Mix": "9%", "Size (SF)": "1,294", "Avg. Market Rent": "$2,540", "Avg. Market Rent PSF": "$1.96" }, { "Unit Type": "Total / Average", "# of Units": "304", "% of Unit Mix": "100%", "Size (SF)": "975", "Avg. Market Rent": "$2,037", "Avg. Market Rent PSF": "$2.09" }] }
 
   const container1 = document.querySelector('.col-56');
   container1.innerHTML = '';
   // Calculate the grid-template-columns value based on header count
-  const numberOfHeaders1 = page27.header.length;
+  const numberOfHeaders1 = page27_table1.header.length;
   const gridTemplateColumnsValue1 = Array(numberOfHeaders1).fill('1fr').join(' ');
 
-  // Creating Headers from page27.header
+  // Creating Headers from page27_table1.header
   const headerDiv1 = document.createElement('div');
   headerDiv1.className = 'flexme';
   headerDiv1.style.gridTemplateColumns = gridTemplateColumnsValue1;
 
-  for (let header of page27.header) {
+  for (let header of page27_table1.header) {
     const p = document.createElement('p');
     p.textContent = header.label;
     p.className = 'rank';
@@ -523,12 +525,12 @@ const PassProjectData = (ProjectData) => {
   container1.appendChild(headerDiv1);
 
   // Creating Rows from page27.rows
-  for (let rowData of page27.rows) {
+  for (let rowData of page27_table1.rows) {
     const rowDiv = document.createElement('div');
     rowDiv.className = 'row';
     rowDiv.style.gridTemplateColumns = gridTemplateColumnsValue1;
 
-    for (let header of page27.header) {
+    for (let header of page27_table1.header) {
       const p = document.createElement('p');
       p.textContent = rowData[header.id] || ''; // Use the header id to fetch the corresponding data from the row
       p.className = 'text-94';
@@ -537,6 +539,171 @@ const PassProjectData = (ProjectData) => {
 
     container1.appendChild(rowDiv);
   }
+
+
+
+
+
+
+
+
+  // unitMix -------------------------------------------------------------------------------------------
+
+
+  // page27_table2 
+  let page27_table2 = ProjectData.allData.page27.tables.table2
+  // let page27_table2 = { "header": [{ "id": "Unit Type", "label": "Unit Type" }, { "id": "# of Units", "label": "# of Units" }, { "id": "% of Unit Mix", "label": "% of Unit Mix" }, { "id": "Size (SF)", "label": "Size (SF)" }, { "id": "Avg. Market Rent", "label": "Avg. Market Rent" }, { "id": "Avg. Market Rent PSF", "label": "Avg. Market Rent PSF" }], "rows": [{ "Unit Type": " A1 (1 Bed / 1 Bath) ", "# of Units": "31", "% of Unit Mix": "10%", "Size (SF)": "627", "Avg. Market Rent": "$1,677", "Avg. Market Rent PSF": "$2.67" }, { "Unit Type": " A2 (1 Bed / 1 Bath) ", "# of Units": "19", "% of Unit Mix": "6%", "Size (SF)": "691", "Avg. Market Rent": "$1,720", "Avg. Market Rent PSF": "$2.49" }, { "Unit Type": " A3 (1 Bed / 1 Bath) ", "# of Units": "16", "% of Unit Mix": "5%", "Size (SF)": "750", "Avg. Market Rent": "$1,782", "Avg. Market Rent PSF": "$2.38" }, { "Unit Type": " B1 (2 Bed / 1 Bath) ", "# of Units": "27", "% of Unit Mix": "9%", "Size (SF)": "893", "Avg. Market Rent": "$2,007", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B2 (2 Bed / 2 Bath) ", "# of Units": "5", "% of Unit Mix": "2%", "Size (SF)": "917", "Avg. Market Rent": "$2,059", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B3 (2 Bed / 2 Bath) ", "# of Units": "42", "% of Unit Mix": "14%", "Size (SF)": "932", "Avg. Market Rent": "$2,028", "Avg. Market Rent PSF": "$2.18" }, { "Unit Type": " B4 (2 Bed / 2 Bath) ", "# of Units": "82", "% of Unit Mix": "27%", "Size (SF)": "1,072", "Avg. Market Rent": "$2,090", "Avg. Market Rent PSF": "$1.95" }, { "Unit Type": " B5 (2 Bed / 2 Bath) ", "# of Units": "54", "% of Unit Mix": "18%", "Size (SF)": "1,111", "Avg. Market Rent": "$2,111", "Avg. Market Rent PSF": "$1.90" }, { "Unit Type": " C1 (3 Bed / 2 Bath) ", "# of Units": "28", "% of Unit Mix": "9%", "Size (SF)": "1,294", "Avg. Market Rent": "$2,540", "Avg. Market Rent PSF": "$1.96" }, { "Unit Type": "Total / Average", "# of Units": "304", "% of Unit Mix": "100%", "Size (SF)": "975", "Avg. Market Rent": "$2,037", "Avg. Market Rent PSF": "$2.09" }] }
+
+  const container1_table2 = document.querySelector('.col-table2');
+  container1_table2.innerHTML = '';
+  // Calculate the grid-template-columns value based on header count
+  const numberOfHeaders1_table = page27_table2.header.length;
+  const gridTemplateColumnsValue1_table = Array(numberOfHeaders1_table).fill('1fr').join(' ');
+
+  // Creating Headers from page27_table2.header
+  const headerDiv1_table1 = document.createElement('div');
+  headerDiv1_table1.className = 'flexme';
+  headerDiv1_table1.style.gridTemplateColumns = gridTemplateColumnsValue1_table;
+
+  for (let header of page27_table2.header) {
+    const p = document.createElement('p');
+    p.textContent = header.label;
+    p.className = 'rank';
+    headerDiv1_table1.appendChild(p);
+  }
+
+  container1_table2.appendChild(headerDiv1_table1);
+
+  // Creating Rows from page27.rows
+  for (let rowData of page27_table2.rows) {
+    const rowDiv = document.createElement('div');
+    rowDiv.className = 'row';
+    rowDiv.style.gridTemplateColumns = gridTemplateColumnsValue1_table;
+
+    for (let header of page27_table2.header) {
+      const p = document.createElement('p');
+      p.textContent = rowData[header.id] || ''; // Use the header id to fetch the corresponding data from the row
+      p.className = 'text-94';
+      rowDiv.appendChild(p);
+    }
+
+    container1_table2.appendChild(rowDiv);
+  }
+
+
+
+  // unitMix -------------------------------------------------------------------------------------------
+
+
+  // page27_table3 
+  let page27_table3 = ProjectData.allData.page27.tables.table3
+  // let page27_table3 = { "header": [{ "id": "Unit Type", "label": "Unit Type" }, { "id": "# of Units", "label": "# of Units" }, { "id": "% of Unit Mix", "label": "% of Unit Mix" }, { "id": "Size (SF)", "label": "Size (SF)" }, { "id": "Avg. Market Rent", "label": "Avg. Market Rent" }, { "id": "Avg. Market Rent PSF", "label": "Avg. Market Rent PSF" }], "rows": [{ "Unit Type": " A1 (1 Bed / 1 Bath) ", "# of Units": "31", "% of Unit Mix": "10%", "Size (SF)": "627", "Avg. Market Rent": "$1,677", "Avg. Market Rent PSF": "$2.67" }, { "Unit Type": " A2 (1 Bed / 1 Bath) ", "# of Units": "19", "% of Unit Mix": "6%", "Size (SF)": "691", "Avg. Market Rent": "$1,720", "Avg. Market Rent PSF": "$2.49" }, { "Unit Type": " A3 (1 Bed / 1 Bath) ", "# of Units": "16", "% of Unit Mix": "5%", "Size (SF)": "750", "Avg. Market Rent": "$1,782", "Avg. Market Rent PSF": "$2.38" }, { "Unit Type": " B1 (2 Bed / 1 Bath) ", "# of Units": "27", "% of Unit Mix": "9%", "Size (SF)": "893", "Avg. Market Rent": "$2,007", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B2 (2 Bed / 2 Bath) ", "# of Units": "5", "% of Unit Mix": "2%", "Size (SF)": "917", "Avg. Market Rent": "$2,059", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B3 (2 Bed / 2 Bath) ", "# of Units": "42", "% of Unit Mix": "14%", "Size (SF)": "932", "Avg. Market Rent": "$2,028", "Avg. Market Rent PSF": "$2.18" }, { "Unit Type": " B4 (2 Bed / 2 Bath) ", "# of Units": "82", "% of Unit Mix": "27%", "Size (SF)": "1,072", "Avg. Market Rent": "$2,090", "Avg. Market Rent PSF": "$1.95" }, { "Unit Type": " B5 (2 Bed / 2 Bath) ", "# of Units": "54", "% of Unit Mix": "18%", "Size (SF)": "1,111", "Avg. Market Rent": "$2,111", "Avg. Market Rent PSF": "$1.90" }, { "Unit Type": " C1 (3 Bed / 2 Bath) ", "# of Units": "28", "% of Unit Mix": "9%", "Size (SF)": "1,294", "Avg. Market Rent": "$2,540", "Avg. Market Rent PSF": "$1.96" }, { "Unit Type": "Total / Average", "# of Units": "304", "% of Unit Mix": "100%", "Size (SF)": "975", "Avg. Market Rent": "$2,037", "Avg. Market Rent PSF": "$2.09" }] }
+
+  const container1_table3 = document.querySelector('.col-table3');
+  container1_table3.innerHTML = '';
+  // Calculate the grid-template-columns value based on header count
+  const numberOfHeaders1_table3 = page27_table3.header.length;
+  const gridTemplateColumnsValue1_table3 = Array(numberOfHeaders1_table3).fill('1fr').join(' ');
+
+  // Creating Headers from page27_table3.header
+  const headerDiv1_table3 = document.createElement('div');
+  headerDiv1_table3.className = 'flexme';
+  headerDiv1_table3.style.gridTemplateColumns = gridTemplateColumnsValue1_table3;
+
+  for (let header of page27_table3.header) {
+    const p = document.createElement('p');
+    p.textContent = header.label;
+    p.className = 'rank';
+    headerDiv1_table3.appendChild(p);
+  }
+
+  container1_table3.appendChild(headerDiv1_table3);
+
+  // Creating Rows from page27.rows
+  for (let rowData of page27_table3.rows) {
+    const rowDiv = document.createElement('div');
+    rowDiv.className = 'row';
+    rowDiv.style.gridTemplateColumns = gridTemplateColumnsValue1_table3;
+
+    for (let header of page27_table3.header) {
+      const p = document.createElement('p');
+      p.textContent = rowData[header.id] || ''; // Use the header id to fetch the corresponding data from the row
+      p.className = 'text-94';
+      rowDiv.appendChild(p);
+    }
+
+    container1_table3.appendChild(rowDiv);
+  }
+
+
+
+
+
+
+
+
+
+  // page27_table4 
+  let page27_table4 = ProjectData.allData.page27.tables.table4
+  // let page27_table4 = { "header": [{ "id": "Unit Type", "label": "Unit Type" }, { "id": "# of Units", "label": "# of Units" }, { "id": "% of Unit Mix", "label": "% of Unit Mix" }, { "id": "Size (SF)", "label": "Size (SF)" }, { "id": "Avg. Market Rent", "label": "Avg. Market Rent" }, { "id": "Avg. Market Rent PSF", "label": "Avg. Market Rent PSF" }], "rows": [{ "Unit Type": " A1 (1 Bed / 1 Bath) ", "# of Units": "31", "% of Unit Mix": "10%", "Size (SF)": "627", "Avg. Market Rent": "$1,677", "Avg. Market Rent PSF": "$2.67" }, { "Unit Type": " A2 (1 Bed / 1 Bath) ", "# of Units": "19", "% of Unit Mix": "6%", "Size (SF)": "691", "Avg. Market Rent": "$1,720", "Avg. Market Rent PSF": "$2.49" }, { "Unit Type": " A3 (1 Bed / 1 Bath) ", "# of Units": "16", "% of Unit Mix": "5%", "Size (SF)": "750", "Avg. Market Rent": "$1,782", "Avg. Market Rent PSF": "$2.38" }, { "Unit Type": " B1 (2 Bed / 1 Bath) ", "# of Units": "27", "% of Unit Mix": "9%", "Size (SF)": "893", "Avg. Market Rent": "$2,007", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B2 (2 Bed / 2 Bath) ", "# of Units": "5", "% of Unit Mix": "2%", "Size (SF)": "917", "Avg. Market Rent": "$2,059", "Avg. Market Rent PSF": "$2.25" }, { "Unit Type": " B3 (2 Bed / 2 Bath) ", "# of Units": "42", "% of Unit Mix": "14%", "Size (SF)": "932", "Avg. Market Rent": "$2,028", "Avg. Market Rent PSF": "$2.18" }, { "Unit Type": " B4 (2 Bed / 2 Bath) ", "# of Units": "82", "% of Unit Mix": "27%", "Size (SF)": "1,072", "Avg. Market Rent": "$2,090", "Avg. Market Rent PSF": "$1.95" }, { "Unit Type": " B5 (2 Bed / 2 Bath) ", "# of Units": "54", "% of Unit Mix": "18%", "Size (SF)": "1,111", "Avg. Market Rent": "$2,111", "Avg. Market Rent PSF": "$1.90" }, { "Unit Type": " C1 (3 Bed / 2 Bath) ", "# of Units": "28", "% of Unit Mix": "9%", "Size (SF)": "1,294", "Avg. Market Rent": "$2,540", "Avg. Market Rent PSF": "$1.96" }, { "Unit Type": "Total / Average", "# of Units": "304", "% of Unit Mix": "100%", "Size (SF)": "975", "Avg. Market Rent": "$2,037", "Avg. Market Rent PSF": "$2.09" }] }
+
+  const container1_table4 = document.querySelector('.col-table3');
+  container1_table4.innerHTML = '';
+  // Calculate the grid-template-columns value based on header count
+  const numberOfHeaders1_table4 = page27_table4.header.length;
+  const gridTemplateColumnsValue1_table4 = Array(numberOfHeaders1_table4).fill('1fr').join(' ');
+
+  // Creating Headers from page27_table4.header
+  const headerDiv1_table4 = document.createElement('div');
+  headerDiv1_table4.className = 'flexme';
+  headerDiv1_table4.style.gridTemplateColumns = gridTemplateColumnsValue1_table4;
+
+  for (let header of page27_table4.header) {
+    const p = document.createElement('p');
+    p.textContent = header.label;
+    p.className = 'rank';
+    headerDiv1_table4.appendChild(p);
+  }
+
+  container1_table4.appendChild(headerDiv1_table4);
+
+  // Creating Rows from page27.rows
+  for (let rowData of page27_table4.rows) {
+    const rowDiv = document.createElement('div');
+    rowDiv.className = 'row';
+    rowDiv.style.gridTemplateColumns = gridTemplateColumnsValue1_table4;
+
+    for (let header of page27_table4.header) {
+      const p = document.createElement('p');
+      p.textContent = rowData[header.id] || ''; // Use the header id to fetch the corresponding data from the row
+      p.className = 'text-94';
+      rowDiv.appendChild(p);
+    }
+
+    container1_table4.appendChild(rowDiv);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 };
 
 

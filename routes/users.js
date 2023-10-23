@@ -214,7 +214,7 @@ const generatePDF = async (payload) => {
 
 
 
-        .replace(/\[page27_summary\]/g, payload.allData.page27?.um_summary)
+        .replace(/\[page27_summary\]/g, payload.allData.page27?.description)
         .replace(/\[page29_growing_biotech\]/g, payload.allData.page29?.growing_biotech)
         .replace(/\[page29_capital\]/g, payload.allData.page29?.capital)
 
@@ -261,8 +261,8 @@ const generatePDF = async (payload) => {
     //     height: '1080px',
     //     printBackground: true,
     // });
-    // const outputPath = path.resolve('./output.pdf');
-    // fs.writeFileSync(outputPath, pdfBuffer);
+    const outputPath = path.resolve('./output.pdf');
+    fs.writeFileSync(outputPath, pdfBuffer);
 
     console.log(`PDF Created Done`);
 
@@ -280,6 +280,7 @@ const delay = (time) => {
 router.post('/proxyLambda', async (req, res) => {
 
     console.log('this is my data', req.body)
+    console.log('my api link', config[env].url)
     try {
         const response = await axios.post(config[env].url, req.body, {
             headers: {
