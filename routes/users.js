@@ -8,7 +8,6 @@ const express = require('express');
 const config = require('../config');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const PORT = 3001;
 const ngrok = require('ngrok');
 require('dotenv').config();
 
@@ -19,7 +18,7 @@ const ImageData = require('../models/ImageData');
 const bcrypt = require('bcryptjs');
 const { JSDOM } = require('jsdom');
 
-const env = process.env.NODE_ENV || "development"; 
+const env = process.env.NODE_ENV || "development";
 
 
 const axios = require('axios');
@@ -39,7 +38,7 @@ const multer = require('multer');
 
 // const upload = multer({ storage: storage });
 
-// router.post('/runfunction', upload.single('image'), async (req, res) => {
+// router.post('/generatingPDF', upload.single('image'), async (req, res) => {
 //     if (req.file) {
 //         console.log('File uploaded successfully');
 //         res.status(200).send('File uploaded successfully');
@@ -49,7 +48,7 @@ const multer = require('multer');
 //     }
 // });
 
-router.post('/runfunction', async (req, res) => {
+router.post('/generatingPDF', async (req, res) => {
     const {
         image_urlArray,
         image_LogourlArray,
