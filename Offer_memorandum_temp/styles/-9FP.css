@@ -1,0 +1,554 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 192rem;
+}.item-2-xm7 {
+  width: 100%;
+  height: 108rem;
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/image-bg-aFB.png');
+}
+.item-2-xm7 .black-bg-t8y {
+  width: 77.6rem;
+  height: 108rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #00010b;
+}
+.item-2-xm7 .blocks-cKs {
+  width: 55.5rem;
+  height: 89.2rem;
+  position: absolute;
+  left: 10.1rem;
+  top: 9.3rem;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 {
+  margin-bottom: 8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .title-line-tHP {
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .title-line-tHP .title-dkm {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .title-line-tHP .line-LQH {
+  width: 10.2rem;
+  height: 0rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.INVESTMENT_CONTACTS_CONTAINER_Div{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: blue;
+  row-gap: 48px;
+}
+.INVESTMENT_DEBT_CONTAINER_Div{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: blue;
+  row-gap: 48px;
+}
+
+.ExecutiveText{
+  color: #F9FAFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  margin-bottom: 12px;
+}
+.InvestmentText{
+  color: #F9FAFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin-bottom: 8px;
+}
+.executiveEmail{
+  color: #BEC3FF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd {
+  margin: 0rem 5.5rem 4.8rem 0rem;
+  width: calc(100% - 5.5rem);
+  height: 12.1rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-01-L2u {
+  margin-right: 9.2rem;
+  width: 20.1rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-01-L2u .casey-babb-ccim-fqs {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.036rem;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-01-L2u .position-email-zNM {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-01-L2u .position-email-zNM .position-kMX {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-01-L2u .position-email-zNM .position-kMX .executive-vice-president-hXf {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-01-L2u .position-email-zNM .position-kMX .multifamily-investments-E1o {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-01-L2u .position-email-zNM .caseybabbcollierscom-kkq {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bdc3ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-02-5o7 {
+  width: 20.7rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-02-5o7 .shawn-rupp-e5X {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.036rem;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-02-5o7 .position-email-aE5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-02-5o7 .position-email-aE5 .position-w4d {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-02-5o7 .position-email-aE5 .position-w4d .senior-vice-president-VM3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-02-5o7 .position-email-aE5 .position-w4d .multifamily-investments-E3j {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .frame-1000002358-Rgd .contact-02-5o7 .position-email-aE5 .shawnruppcollierscom-N9w {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bdc3ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP {
+  width: 100%;
+  height: 12.1rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-03-4Hf {
+  margin-right: 11.3rem;
+  width: 18rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-03-4Hf .luis-baez-ccim-QsK {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.036rem;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-03-4Hf .position-email-XBF {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-03-4Hf .position-email-XBF .position-gK3 {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-03-4Hf .position-email-XBF .position-gK3 .senior-vice-president-qSq {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-03-4Hf .position-email-XBF .position-gK3 .multifamily-investments-xGZ {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-03-4Hf .position-email-XBF .luisbaezcollierscom-gTT {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bdc3ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-04-pJm {
+  width: 26.2rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-04-pJm .will-mathews-B9K {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.036rem;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-04-pJm .position-email-KFX {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-04-pJm .position-email-KFX .position-5kV {
+  margin-bottom: 0.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-04-pJm .position-email-KFX .position-5kV .vice-chair-3BX {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-04-pJm .position-email-KFX .position-5kV .us-capital-markets-multifamily-lead-mtD {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-01-wN9 .frame-25-sv1 .auto-group-um6z-JZP .contact-04-pJm .position-email-KFX .willmathewscollierscom-6vV {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bdc3ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu {
+  width: 100%;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .title-line-Peh {
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .title-line-Peh .title-9Ny {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .title-line-Peh .line-GiV {
+  width: 8rem;
+  height: 0;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT {
+  margin-bottom: 4.8rem;
+  width: 100%;
+  height: 12.1rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact01-jMB {
+  margin-right: 9.1rem;
+  width: 20.1rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact01-jMB .nathan-lynch-HNh {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.036rem;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact01-jMB .position-email-25P {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact01-jMB .position-email-25P .position-PAq {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact01-jMB .position-email-25P .position-PAq .executive-vice-president-8u7 {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact01-jMB .position-email-25P .position-PAq .tampa-53f {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact01-jMB .position-email-25P .caseybabbcollierscom-R7X {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bdc3ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact02-kfb {
+  width: 18rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact02-kfb .michael-sogluizzo-h53 {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.036rem;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact02-kfb .position-email-cxh {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact02-kfb .position-email-cxh .position-PCm {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact02-kfb .position-email-cxh .position-PCm .associate-wEH {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact02-kfb .position-email-cxh .position-PCm .tampa-4Zo {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .frame-1000002360-BqT .contact02-kfb .position-email-cxh .luisbaezcollierscom-onH {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bdc3ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .contact03-M37 {
+  width: 20.7rem;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .contact03-M37 .donald-jennewein-i8Z {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.036rem;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .contact03-M37 .position-email-rEm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .contact03-M37 .position-email-rEm .position-Qn5 {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .contact03-M37 .position-email-rEm .position-Qn5 .executive-vice-president-Zey {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .contact03-M37 .position-email-rEm .position-Qn5 .tampa-Hay {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f9f9ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-2-xm7 .blocks-cKs .block-02-EWu .frame-26-dJ9 .contact03-M37 .position-email-rEm .shawnruppcollierscom-SCy {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bdc3ff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

@@ -1,0 +1,364 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 192rem;
+}.item-7-24R {
+  box-sizing: border-box;
+  padding: 9.6rem 9.6rem 10rem 9.8rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #0d0d0d;
+}
+.item-7-24R .auto-group-vuyd-jzR {
+  margin-bottom: 8.4rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .auto-group-t2nm-J1w {
+  margin-right: 13rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .auto-group-t2nm-J1w .title-Stq {
+  margin-bottom: 3.9rem;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1.2000000166;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .auto-group-t2nm-J1w .line-7-ZyT {
+  margin-bottom: 27.7rem;
+  width: 45.8rem;
+  height: 0;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .auto-group-t2nm-J1w .subtitle-KBw {
+  margin-left: 0.2rem;
+  max-width: 45rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2000000477;
+  color: #fdfdfd;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM {
+  margin-top: 0.4rem;
+  height: 46.8rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 {
+  margin-right: 2rem;
+  width: 54.6rem;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .bullet-line-01-Xoo {
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  padding-left: 0.8rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .bullet-line-01-Xoo .mdi-circle-outline-UU9 {
+  margin: 0.8rem 0.9rem 0rem 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .bullet-line-01-Xoo .south-tampa-has-over-7m-sf-of-retail-and-entertainment-offerings-including-the-westshore-plaza-and-international-plaza-malls-15-minutes-C9F {
+  max-width: 52.1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(253, 253, 253, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .bullet-line-02-FtD {
+  margin: 0rem 3.3rem 2rem 0rem;
+  box-sizing: border-box;
+  padding-left: 0.8rem;
+  width: calc(100% - 3.3rem);
+  display: flex;
+  align-items: flex-start;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .bullet-line-02-FtD .mdi-circle-outline-yJR {
+  margin: 0.8rem 0.9rem 0rem 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .bullet-line-02-FtD .bayshore-boulevard-world-famous-9-mile-linear-park-along-tampa-bays-urban-waterfront-10-minutes-J5o {
+  max-width: 48.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(253, 253, 253, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .bullet-line-03-mzy {
+  box-sizing: border-box;
+  padding-left: 0.8rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .bullet-line-03-mzy .mdi-circle-outline-vcy {
+  margin: 0.8rem 0.9rem 0rem 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .bullet-line-03-mzy .downtown-tampa-the-cultural-government-and-financial-hub-of-tampa-with-116-mm-sf-of-office-space-95k-jobs-numerous-museums-and-the-new-water-street-district-an-exciting-new-35-billion-mixed-use-development-connecting-the-downtown-office-core-with-the-mostly-residential-channel-district-15-minutes-eYy {
+  max-width: 52.1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.016rem;
+  color: rgba(253, 253, 253, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .auto-group-yeur-EGH {
+  box-sizing: border-box;
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .auto-group-yeur-EGH .bullet-line-04-n2u {
+  margin: 0rem 1.5rem 2rem 0rem;
+  box-sizing: border-box;
+  padding-left: 0.8rem;
+  width: calc(100% - 1.5rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .auto-group-yeur-EGH .bullet-line-04-n2u .mdi-circle-outline-hQm {
+  margin: 0.8rem 0.9rem 0rem 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .auto-group-yeur-EGH .bullet-line-04-n2u .westshore-business-district-the-largest-suburban-office-market-in-florida-with-over-20-million-sf-of-office-space-102k-jobs-2-super-regional-malls-raymond-james-stadium-and-numerous-hotels-and-restaurants-15-minutes-2T3 {
+  max-width: 50.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(253, 253, 253, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .auto-group-yeur-EGH .bullet-line-05-G6V {
+  margin-right: 1.1rem;
+  box-sizing: border-box;
+  padding-left: 0.8rem;
+  width: calc(100% - 1.1rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .auto-group-yeur-EGH .bullet-line-05-G6V .mdi-circle-outline-145 {
+  margin: 0.8rem 0.9rem 0rem 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-01-zJ5 .auto-group-yeur-EGH .bullet-line-05-G6V .hyde-park-village-265k-sf-open-air-urban-shopping-village-in-historic-hyde-park-12-minutes-vRw {
+  max-width: 51rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(253, 253, 253, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 {
+  width: 57.2rem;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .bullet-line-06-ALH {
+  box-sizing: border-box;
+  padding-left: 0.8rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .bullet-line-06-ALH .mdi-circle-outline-hb7 {
+  margin: 0.8rem 0.9rem 0rem 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .bullet-line-06-ALH .soho-south-tampas-premier-entertainment-and-nightlife-district-15-minutes-p9w {
+  max-width: 54.7rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(253, 253, 253, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .auto-group-oawv-6dF {
+  box-sizing: border-box;
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .auto-group-oawv-6dF .bullet-line-07-r6d {
+  margin: 0rem 1.4rem 2rem 0rem;
+  box-sizing: border-box;
+  padding-left: 0.8rem;
+  width: calc(100% - 1.4rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .auto-group-oawv-6dF .bullet-line-07-r6d .mdi-circle-outline-yh3 {
+  margin: 0.8rem 0.9rem 0rem 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .auto-group-oawv-6dF .bullet-line-07-r6d .ideally-located-on-the-southern-edge-of-the-burgeoning-new-westshore-marina-district-submarket-the-pointe-on-westshore-is-equidistant-to-the-regions-top-employment-centers-westshore-gateway-downtown-tampa-and-downtown-st-pete-as-well-as-tampas-2nd-largest-employer-macdill-airforce-base-300000-jobs-within-20-minutes-7HT {
+  max-width: 53.3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(253, 253, 253, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .auto-group-oawv-6dF .bullet-line-08-5tV {
+  margin-right: 0.8rem;
+  box-sizing: border-box;
+  padding-left: 0.8rem;
+  width: calc(100% - 0.8rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .auto-group-oawv-6dF .bullet-line-08-5tV .mdi-circle-outline-d9K {
+  margin: 0.8rem 0.9rem 0rem 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .auto-group-oawv-6dF .bullet-line-08-5tV .affluent-south-tampa-demographics-within-a-5-minute-drive-time-including-nearly-140k-average-household-incomes-600k-average-home-values-80-white-collar-jobs-and-a-b-rated-schools-LpR {
+  max-width: 53.9rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(253, 253, 253, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .bullet-line-09-zPB {
+  box-sizing: border-box;
+  padding-left: 0.8rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .bullet-line-09-zPB .mdi-circle-outline-k7T {
+  margin: 0.8rem 0.9rem 0rem 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-vuyd-jzR .txt-boxes-SnM .box-02-DA9 .bullet-line-09-zPB .westshore-marina-district-52-acre-mixed-use-development-with-1300-luxury-apartments-fee-simple-townhomes-and-high-rise-condominiums-plus-24k-sf-of-boutiques-shops-and-restaurants-15-miles-of-scenic-waterfront-green-space-and-a-159-slip-marina-5-minutes-4tq {
+  max-width: 54.7rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(253, 253, 253, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-v8rd-t7B {
+  margin: 0rem 0.4rem 0rem 0.2rem;
+  width: calc(100% - 0.6rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-v8rd-t7B .image-03-1Sh {
+  margin-right: 3.9rem;
+  width: 54.7rem;
+  height: 32.8rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-v8rd-t7B .image-02-YhX {
+  margin-right: 4rem;
+  width: 54.7rem;
+  height: 32.8rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-7-24R .auto-group-v8rd-t7B .image-01-h4d {
+  width: 54.7rem;
+  height: 32.8rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}

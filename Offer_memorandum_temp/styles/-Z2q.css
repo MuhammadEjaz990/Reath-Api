@@ -1,0 +1,254 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 192rem;
+}.item-5-z1o {
+  box-sizing: border-box;
+  padding-top: 10rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfdfd;
+}
+.item-5-z1o .auto-group-3yiv-iiV {
+  margin: 0rem 13rem 9.2rem 10rem;
+  width: calc(100% - 23rem);
+  height: 60.4rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-3yiv-iiV .image-qYD {
+  margin-right: 9.2rem;
+  width: 102.7rem;
+  height: 60.4rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-3yiv-iiV .auto-group-ku3f-aVo {
+  margin: 1.9rem 0rem 4.3rem 0rem;
+  height: calc(100% - 6.2rem);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-3yiv-iiV .auto-group-ku3f-aVo .title-line-Jwb {
+  margin: 0rem 20.8rem 13.1rem 0rem;
+  height: 14.7rem;
+  border-bottom: solid 0.1rem #000000;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-3yiv-iiV .auto-group-ku3f-aVo .title-line-Jwb .title-rCR {
+  max-width: 36.3rem;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.2999999306;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  font-family: Montserrat, 'Source Sans Pro';
+}
+.item-5-z1o .auto-group-3yiv-iiV .auto-group-ku3f-aVo .two-resort-style-pools-a-large-clubhouse-with-indoor-and-outdoor-resident-lounge-areas-business-center-coffee-bar-gas-grilling-stations-pet-spa-package-locker-room-car-wash-area-a-state-of-the-art-fitness-center-and-more-nested-along-the-southern-edge-of-south-tampas-burgeoning-new-westshore-marina-district-residents-enjoy-resort-style-living-but-with-the-convenience-of-being-within-a-20-minute-commute-to-the-largest-employment-centers-in-the-region-including-the-westshore-business-district-gateway-downtown-tampa-and-downtown-st-petersburg-which-collectively-employ-nearly-300000-mostly-white-collar-employees-mKP {
+  max-width: 57.1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #00010b;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm {
+  box-sizing: border-box;
+  padding: 7.4rem 14.6rem 8.1rem 14.7rem;
+  width: 100%;
+  height: 28.4rem;
+  background-color: #0d0d0d;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  column-gap: 11.1625rem;
+  align-items: center;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .units-HKf {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .units-HKf .item-444-eAD {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fdfdfd;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .units-HKf .units-kU9 {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fdfdfd;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .line-01-GBb {
+  width: 0.1rem;
+  height: 10rem;
+  background-color: rgba(253, 253, 253, 0.8000000119);
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .built-zNV {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .built-zNV .item-2022-x4R {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .built-zNV .built-Gqo {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .line-02-12h {
+  width: 0.1rem;
+  height: 10rem;
+  background-color: rgba(253, 253, 253, 0.8000000119);
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .occupied-L4y {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .occupied-L4y .item-96-ViZ {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .occupied-L4y .occupied-2Ch {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .line-03-9o7 {
+  width: 0.1rem;
+  height: 10rem;
+  background-color: rgba(253, 253, 253, 0.8000000119);
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .unit-uGV {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .unit-uGV .item-2343-fmT {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .unit-uGV .in-place-unit-PhT {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .line-04-Xof {
+  width: 0.1rem;
+  height: 10rem;
+  background-color: rgba(253, 253, 253, 0.8000000119);
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .sf-ssX {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .sf-ssX .item-220-pnm {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item-5-z1o .auto-group-ppdk-qCm .numbers-AF3 .sf-ssX .in-place-sf-wMb {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

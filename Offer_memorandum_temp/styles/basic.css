@@ -1,0 +1,286 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+body {
+  width: 192rem;
+}
+
+.item-1-P7N {
+  box-sizing: border-box;
+  padding: 10rem 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #00000a;
+}
+
+.item-1-P7N .auto-group-odgf-LRv {
+  margin: 0rem 10rem 6.6rem 10rem;
+  width: calc(100% - 20rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-odgf-LRv .offering-memorandum-QyW {
+  margin-right: 20.9rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.forGraph {
+  width: 100%;
+  /* background-color: blue; */
+}
+#myChart{
+  height: 420px;
+  /* background-color: red; */
+  /* border: 1px solid black; */
+  margin-top: auto;
+}
+.rectangleArro{
+  position: absolute;
+  top: 50%;
+  left: -47px;
+}
+
+.line-03-hX7{
+  width: 4.7rem;
+  height: 16.7rem;
+  position: absolute;
+  left: 0;
+  top: 7.4rem;
+}
+#barChartContainer {
+  width: 100%;
+  height: 300px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  position: relative;
+  padding: 10px 20px 40px 20px;
+  /* bottom padding increased to accommodate labels */
+  box-sizing: border-box;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: space-evenly;
+}
+
+.bar {
+  width: 30px;
+  background-color: #ccc;
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 30px;
+  /* space added for the label */
+}
+
+.bar.highlight {
+  background-color: black;
+}
+
+.bar-label {
+  position: absolute;
+  bottom: -130px;
+  /* adjusted to position label outside the border line */
+  width: 100%;
+  text-align: center;
+}
+
+.bar-value {
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.item-1-P7N .auto-group-odgf-LRv .line-8-Gkp {
+  margin-right: 16.8rem;
+  width: 80rem;
+  height: 0;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-odgf-LRv .w-prescott-st-tampa-fl-33616-Qs2 {
+  margin-left: 168px;
+  width: 300px;
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  /* white-space: nowrap; */
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-y4o5-icp {
+  margin-bottom: 1.2rem;
+  width: 100%;
+  height: 70rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-y4o5-icp .rectangle-2-4Rn {
+  width: 124.3rem;
+  height: 62.8rem;
+  position: relative;
+  left: 33.8rem;
+  top: 3.6rem;
+  background-size: 100% 131.872%;
+  background-position: 0 -5.1175rem;
+  background-image: url('../assets/rectangle-2-rA4.png');
+}
+
+.item-1-P7N .auto-group-y4o5-icp .group-1-W2t {
+  box-sizing: border-box;
+  padding: 4.1rem 9.2rem 4.094rem 9.3rem;
+  width: 45.9rem;
+  height: 21.6rem;
+  position: absolute;
+  left: 73rem;
+  top: 24.2rem;
+  background-color: rgba(1, 2, 19, 0.6399999857);
+}
+
+.item-1-P7N .auto-group-y4o5-icp .group-1-W2t .layer1-m7E {
+  width: 27.4rem;
+  height: 13.4064rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.item-1-P7N .auto-group-y4o5-icp .rectangle-2-reU {
+  width: 54rem;
+  height: 44.6rem;
+  position: absolute;
+  left: 162.1rem;
+  top: 12.7rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+.item-1-P7N .auto-group-y4o5-icp .rectangle-2-YnC {
+  width: 30rem;
+  height: 44.6rem;
+  position: absolute;
+  /* left: -240px; */
+  left: 0;
+  top: 12.7rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+.item-1-P7N .line-7-51S {
+  margin: 0rem 0rem 1rem 0rem;
+  width: 9.6rem;
+  height: 0;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-cytm-ayn {
+  margin: 0rem 10rem 0rem 10rem;
+  width: calc(100% - 20rem);
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-cytm-ayn .frame-8-sxt {
+  margin-right: 53.75rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-cytm-ayn .frame-8-sxt .item-1-q92 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #f9faff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-cytm-ayn .frame-8-sxt .auto-group-prgf-Zqi {
+  box-sizing: border-box;
+  padding-left: 1.2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-cytm-ayn .frame-8-sxt .auto-group-prgf-Zqi .line-1-GEL {
+  margin: 0.1rem 1.2rem 0rem 0rem;
+  width: 10rem;
+  height: 0.1rem;
+  background-color: #f9faff;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-cytm-ayn .frame-8-sxt .auto-group-prgf-Zqi .item-51-Bs6 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #f9faff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-cytm-ayn .a-brand-new-444-unit-best-in-class-core-asset-in-affluent-south-tampa-8GY {
+  margin-right: 56.85rem;
+  max-width: 34.8rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+
+.item-1-P7N .auto-group-cytm-ayn .image-21-BEp {
+  margin-bottom: 0.01rem;
+  width: 12rem;
+  height: 6.79rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}

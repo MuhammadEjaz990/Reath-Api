@@ -1,0 +1,122 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 192rem;
+}.item-9-LuP {
+  box-sizing: border-box;
+  padding: 10rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fdfdfd;
+}
+.item-9-LuP .auto-group-szgm-H3w {
+  margin: 0.1rem 10rem 0rem 0rem;
+  width: 59.6rem;
+  flex-shrink: 0;
+
+  display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-9-LuP .auto-group-szgm-H3w .title-line-1Eq {
+  /* margin: 0rem 4.1rem 35rem 0rem; */
+  /* margin: 0rem 4.1rem 30rem 0rem; */
+  height: 21.5rem;
+  border-bottom: solid 0.1rem #000000;
+  box-sizing: border-box;
+}
+.item-9-LuP .auto-group-szgm-H3w .title-line-1Eq .title-8qF {
+  max-width: 55.5rem;
+  font-size: 7.6rem;
+  font-weight: 700;
+  line-height: 1.2000000602;
+  letter-spacing: 0.152rem;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  font-family: Montserrat, 'Source Sans Pro';
+}
+.item-9-LuP .auto-group-szgm-H3w .subtitle-text-S5F {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-9-LuP .auto-group-szgm-H3w .subtitle-text-S5F .subtitle-ax9 {
+  margin-bottom: 4rem;
+  /* max-width: 37.5rem; */
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2000000477;
+  color: #00010b;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-9-LuP .auto-group-szgm-H3w .subtitle-text-S5F .the-pointe-is-currently-positioned-near-the-middle-of-its-competitive-set-on-a-month-basis-and-at-the-bottom-on-a-psf-basis-demonstrating-huge-upside-potential-concessions-at-the-property-are-burning-off-and-net-effective-rents-are-experiencing-dramatic-rent-growth-in-the-16-range-for-q3-yoy-but-with-limited-availability-in-the-submarket-continued-growth-is-expected-despite-having-smaller-units-the-top-competitor-cortland-westshore-is-achieving-rents-of-356-unit-month-higher-than-the-pointe-on-westshore-with-similar-finishes-and-a-nearly-identical-location-7hB {
+  max-width: 59.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #00010b;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-9-LuP .auto-group-tu2d-Qph {
+  margin-right: 2rem;
+  height: 88rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-9-LuP .auto-group-tu2d-Qph .image-02-8kh {
+  margin-bottom: 2rem;
+  width: 50.2rem;
+  height: 43rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-9-LuP .auto-group-tu2d-Qph .image-03-4uF {
+  width: 50.2rem;
+  height: 43rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-9-LuP .auto-group-wdku-QiD {
+  height: 88rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-9-LuP .auto-group-wdku-QiD .image-04-Ex9 {
+  margin-bottom: 2.2rem;
+  width: 50.2rem;
+  height: 43rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-9-LuP .auto-group-wdku-QiD .image-01-yeq {
+  width: 50.2rem;
+  height: 42.8rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}

@@ -1,0 +1,307 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+body {
+  width: 192rem;
+}
+
+.item-5-FnG {
+  box-sizing: border-box;
+  padding-top: 10rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfdfd;
+}
+
+.item-5-FnG .auto-group-gyj1-ChW {
+  margin: 0rem 13rem 9.2rem 10rem;
+  width: calc(100% - 23rem);
+  height: 60.4rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-gyj1-ChW .image-29-Xjn {
+  margin-right: 9.2rem;
+  width: 102.7rem;
+  height: 60.4rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-gyj1-ChW .auto-group-mkh5-RaG {
+  margin: 1.9rem 0rem 0rem 0rem;
+  height: calc(100% - 3.2rem);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.item-5-FnG .auto-group-gyj1-ChW .auto-group-mkh5-RaG .frame-1000002501-ksS {
+  margin: 0rem 20.8rem 6.1rem 0rem;
+  height: 9.7rem;
+  border-bottom: solid 0.1rem #000000;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-gyj1-ChW .auto-group-mkh5-RaG .frame-1000002501-ksS .the-pointe-on-westshore-HsN {
+  max-width: 36.3rem;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1.2999999306;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  font-family: Montserrat, 'Source Sans Pro';
+}
+
+.item-5-FnG .auto-group-gyj1-ChW .auto-group-mkh5-RaG .two-resort-style-pools-a-large-clubhouse-with-indoor-and-outdoor-resident-lounge-areas-business-center-coffee-bar-gas-grilling-stations-pet-spa-package-locker-room-car-wash-area-a-state-of-the-art-fitness-center-and-more-nested-along-the-southern-edge-of-south-tampas-burgeoning-new-westshore-marina-district-residents-enjoy-resort-style-living-but-with-the-convenience-of-being-within-a-20-minute-commute-to-the-largest-employment-centers-in-the-region-including-the-westshore-business-district-gateway-downtown-tampa-and-downtown-st-petersburg-which-collectively-employ-nearly-300000-mostly-white-collar-employees-xyW {
+  max-width: 57.1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #00010b;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+
+.salientFeatures {
+
+  max-width: 57.1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #00010b;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 {
+  box-sizing: border-box;
+  padding: 7.4rem 14.6rem 8.1rem 14.7rem;
+  width: 100%;
+  height: 28.4rem;
+  background-color: #0d0d0d;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br {
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  column-gap: 11.1625rem;
+  align-items: center;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-34-c4Q {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-34-c4Q .item-444-JT2 {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fdfdfd;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-34-c4Q .units-bBE {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fdfdfd;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .line-14-8S4 {
+  width: 0.1rem;
+  height: 10rem;
+  background-color: rgba(253, 253, 253, 0.8000000119);
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002502-Tz8 {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002502-Tz8 .item-2022-Rvx {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002502-Tz8 .built-YEt {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .line-15-Ff6 {
+  width: 0.1rem;
+  height: 10rem;
+  background-color: rgba(253, 253, 253, 0.8000000119);
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002503-Boe {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002503-Boe .item-96-Yu6 {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  /* white-space: nowrap; */
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002503-Boe .occupied-Cik {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .line-16-jCt {
+  width: 0.1rem;
+  height: 10rem;
+  background-color: rgba(253, 253, 253, 0.8000000119);
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002504-UwA {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002504-UwA .item-2343-Ssz {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002504-UwA .in-place-unit-BKn {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .line-17-6Br {
+  width: 0.1rem;
+  height: 10rem;
+  background-color: rgba(253, 253, 253, 0.8000000119);
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002505-3ct {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002505-3ct .item-220-zo2 {
+  margin-bottom: 0.9rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.112rem;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.item-5-FnG .auto-group-3ycx-bf6 .frame-1000002506-6br .frame-1000002505-3ct .in-place-sf-srp {
+  margin-right: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

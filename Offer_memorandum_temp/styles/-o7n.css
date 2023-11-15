@@ -1,0 +1,454 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 192rem;
+}
+.item-11-FwN {
+  box-sizing: border-box;
+  padding: 8.8rem 9.9rem 10rem 9.6rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  column-gap: 4rem;
+  align-items: center;
+  border: solid 0.1rem #fff9c7;
+  background-color: #0d0d0d;
+}
+.item-11-FwN .auto-group-enwu-7Ct {
+  height: 89.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-11-FwN .auto-group-enwu-7Ct .investment-highlights-4P2 {
+  margin-bottom: 3.8rem;
+  max-width: 53.8rem;
+  font-size: 7.6rem;
+  font-weight: 700;
+  line-height: 1.2000000602;
+  text-transform: uppercase;
+  color: #fafaff;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG {
+  margin-left: 0.4rem;
+  width: 54.7rem;
+  height: 67.1rem;
+  position: relative;
+  background-size: 131.186% 100%;
+  background-position: -17.059rem 0;
+  background-image: url('../assets/map-bg.png');
+  flex-shrink: 0;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .group-1-dqS {
+  box-sizing: border-box;
+  padding: 0.788rem 1.897rem 0.787rem 1.917rem;
+  width: 9.4625rem;
+  height: 4.1499rem;
+  position: absolute;
+  left: 17.8rem;
+  top: 36.5322rem;
+  background-color: #bec3ff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .group-1-dqS .layer1-XR2 {
+  width: 5.6486rem;
+  height: 2.5757rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .ellipse-9-TpU {
+  width: 1rem;
+  height: 0.9319rem;
+  position: absolute;
+  left: 31.7rem;
+  top: 38.5825rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .rectangle-25-QDv {
+  width: 2.2rem;
+  height: 0.0932rem;
+  position: absolute;
+  left: 29.8rem;
+  top: 38.9553rem;
+  background-color: #bec3ff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .ellipse-17-LNU {
+  width: 1rem;
+  height: 0.9319rem;
+  position: absolute;
+  left: 46.5rem;
+  top: 48.1815rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .rectangle-34-f9r {
+  width: 0.1rem;
+  height: 1.3979rem;
+  position: absolute;
+  left: 47rem;
+  top: 46.8768rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-164-ywE {
+  width: 13.7rem;
+  height: 3.2618rem;
+  position: absolute;
+  left: 31.7rem;
+  top: 44.547rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .ellipse-15-Spp {
+  width: 1.1495rem;
+  height: 1.0713rem;
+  position: absolute;
+  left: 41.8rem;
+  top: 34.1092rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .rectangle-31-bBv {
+  width: 0.4831rem;
+  height: 1.3747rem;
+  position: absolute;
+  left: 42.4rem;
+  top: 33.2704rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .ellipse-8-sv8 {
+  width: 50rem;
+  height: 48.204rem;
+  position: absolute;
+  left: 2.3rem;
+  top: 11.0869rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .ellipse-10-o36 {
+  width: 1rem;
+  height: 0.9319rem;
+  position: absolute;
+  left: 29rem;
+  top: 13.2336rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .ellipse-13-96x {
+  width: 1rem;
+  height: 0.9319rem;
+  position: absolute;
+  left: 43rem;
+  top: 19.664rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .ellipse-14-5mJ {
+  width: 1rem;
+  height: 0.9319rem;
+  position: absolute;
+  left: 41.7rem;
+  top: 38.4893rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .ellipse-12-EPJ {
+  width: 1rem;
+  height: 0.9319rem;
+  position: absolute;
+  left: 43.4rem;
+  top: 5.778rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .ellipse-11-wHi {
+  width: 1rem;
+  height: 0.9319rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 16.5886rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .rectangle-26-gm6 {
+  width: 0.1rem;
+  height: 1.3979rem;
+  position: absolute;
+  left: 29.5rem;
+  top: 11.9289rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .rectangle-29-Rya {
+  width: 0.1rem;
+  height: 1.3979rem;
+  position: absolute;
+  left: 43.5rem;
+  top: 18.3593rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .rectangle-30-MsE {
+  width: 2.005rem;
+  height: 0.6867rem;
+  position: absolute;
+  left: 42.3525rem;
+  top: 38.2097rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .rectangle-28-SNt {
+  width: 0.1rem;
+  height: 1.3979rem;
+  position: absolute;
+  left: 43.9rem;
+  top: 4.4733rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .rectangle-27-waY {
+  width: 0.9159rem;
+  height: 1.2145rem;
+  position: absolute;
+  left: 30.4001rem;
+  top: 17.1478rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-151-fWY {
+  width: 9.3rem;
+  height: 4.3801rem;
+  position: absolute;
+  left: 12.9rem;
+  top: 51.4433rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-152-AiC {
+  box-sizing: border-box;
+  padding: 0.779rem 3.45rem 0.779rem 3.45rem;
+  width: 13.5rem;
+  height: 6.0576rem;
+  position: absolute;
+  left: 17.9rem;
+  top: 5.8712rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-152-AiC .tampa-international-airport-ThJ {
+  max-width: 6.6rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-153-NJU {
+  width: 10.5rem;
+  height: 3.2618rem;
+  position: absolute;
+  left: 24.9rem;
+  top: 18.0797rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-154-SZE {
+  width: 7.7rem;
+  height: 3.2618rem;
+  position: absolute;
+  left: 43.4rem;
+  top: 1.3979rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-155-MgC {
+  width: 10.9rem;
+  height: 3.2618rem;
+  position: absolute;
+  left: 40rem;
+  top: 16.1226rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-156-TDS {
+  box-sizing: border-box;
+  padding: 0.83rem 1.05rem 0.83rem 1.05rem;
+  width: 11.4rem;
+  height: 4.6597rem;
+  position: absolute;
+  left: 36.1rem;
+  top: 35.6935rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-156-TDS .palma-ceia-golf-country-club-yha {
+  max-width: 9.3rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-165-ur8 {
+  box-sizing: border-box;
+  padding: 0.7788rem 2.8rem;
+  width: 15rem;
+  height: 6.0576rem;
+  position: absolute;
+  left: 34.4rem;
+  top: 27.2128rem;
+  background-color: #f9faff;
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .frame-165-ur8 .ballast-point-park-tampa-yacht-country-club-ENc {
+  max-width: 9.4rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+}
+.item-11-FwN .auto-group-enwu-7Ct .group-312-9vG .group-312-9vG-bg {
+  width: 54.7rem;
+  height: 67.1rem;
+  position: relative;
+  background-image: url('REPLACE_IMAGE:7efff7b0a832ec00a5403be80ad9d0c550079a07');
+}
+.item-11-FwN .auto-group-uc3m-5e8 {
+  height: 100%;
+  margin-top: 1.2rem;
+  width: 54.6rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.item-11-FwN .auto-group-uc3m-5e8 .frame-103-2ZN {
+  margin-bottom: 2.9rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item-11-FwN .auto-group-uc3m-5e8 .frame-103-2ZN .proximate-to-major-employers-demand-drivers-752 {
+  margin-bottom: 3.2rem;
+  max-width: 100%;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.3999999762;
+  letter-spacing: 0.064rem;
+  text-transform: uppercase;
+  color: #f9faff;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-11-FwN .auto-group-uc3m-5e8 .frame-103-2ZN .tampas-diverse-economy-and-numerous-demand-drivers-make-it-a-highly-desirable-location-for-real-estate-investment-as-the-second-largest-msa-in-the-state-and-the-third-largest-in-the-southeast-tampa-is-home-to-a-variety-of-corporate-headquarters-a-robust-military-defense-industry-and-a-thriving-financial-and-professional-services-sector-in-fact-tampa-was-recently-named-the-top-emerging-tech-city-in-the-us-by-forbes-the-pointe-on-westshores-location-in-the-westshore-marina-district-positions-it-just-15-minutes-outside-of-downtown-tampa-the-citys-financial-and-cultural-hub-the-area-boasts-over-116-million-square-feet-of-office-space-and-95000-jobs-as-well-as-popular-attractions-like-amalie-arena-the-tampa-bay-convention-center-and-the-florida-aquarium-additionally-the-3-billion-water-street-development-project-is-underway-on-50-acres-between-the-channel-district-and-the-downtown-office-core-the-westshore-business-district-located-just-a-few-minutes-to-the-north-offers-20-million-square-feet-of-space-for-102000-employees-1gC {
+  max-width: 54.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(249, 250, 255, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-11-FwN .auto-group-uc3m-5e8 .image-52-SHe {
+  width: 54.6rem;
+  height: 27.6rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-11-FwN .auto-group-simh-yoN {
+  margin-top: 1.2rem;
+  width: 54.8rem;
+  flex-shrink: 0;
+}
+.item-11-FwN .auto-group-simh-yoN .image-49-hzG {
+  margin-bottom: 1.8rem;
+  width: 54.7rem;
+  height: 36.7rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.item-11-FwN .auto-group-simh-yoN .frame-102-448 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-11-FwN .auto-group-simh-yoN .frame-102-448 .minutes-to-grocery-entertainment-waterfront-amenities-B8k {
+  margin-bottom: 3.2rem;
+  max-width: 100%;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.3999999762;
+  letter-spacing: 0.064rem;
+  text-transform: uppercase;
+  color: #f9faff;
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item-11-FwN .auto-group-simh-yoN .frame-102-448 .minutes-to-grocery-entertainment-waterfront-amenities-abundant-retail-and-world-class-dining-and-recreational-activities-are-accessible-within-minutes-of-the-property-the-pointe-on-westshore-is-moments-away-from-skyview-park-and-waterfront-ballast-point-park-which-includes-the-tampa-yacht-country-club-nearby-grocery-and-retailers-include-whole-foods-trader-joes-target-starbucks-cvs-walgreens-publix-macys-walmart-wawa-home-depot-and-crunch-fitness-the-pointe-on-westshore-is-within-a-short-drive-of-several-golf-courses-including-palma-ceia-golf-country-club-and-some-of-the-most-highly-rated-beaches-in-the-us-including-st-pete-beach-ranked-1-nationwide-tripadvisor-2021-Ude {
+  max-width: 54.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(249, 250, 255, 0.8000000119);
+  font-family: Montserrat, 'Source Sans Pro';
+  flex-shrink: 0;
+}

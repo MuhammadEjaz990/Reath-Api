@@ -1,6 +1,6 @@
 const config = {
     "development": {
-        "path": "/home/ejaz/Project/Reath_Project/Reath-api/offer_memorandum_creation/index.html",
+        "path": "/home/ejaz/Project/Reath_Project/Reath-api/Offer_memorandum_temp/index.html",
         "url": "http://192.168.18.90:3095/get_information"
     },
     "production": {
